@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+    display: block;
+    font-size: 4em;
+}
+
+h2 {
+    text-align: center;
+    display: block;
+    font-size: 2.5em;
+}
+
+h3 {
+    text-align: right;
+    display: block;
+    font-size: 2.5em;
+    padding: 15px;
+}
+
+header {
+    background-color: darkblue;
+    color: #ffffff;
+    outline: 4px #000000;
+}
+
+p {
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 30px;
+}
+
+article {
+    background-color: gainsboro;
+}
