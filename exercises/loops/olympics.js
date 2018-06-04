@@ -1,127 +1,46 @@
-// if (5 > 3) {
-//     console.log("is greater than")
+
+
+// for(i =0; i < 10; i++) {
+//     console.log(i)
 // }
 
 
 
-
-// var cat = "cat";
-// if (cat.length === 3) { 
-//     console.log("is the length")
+// for(i =9; i > 0; i--) {
+//     console.log(i)
 // }
 
+// var fruit = ["banana", "orange", "apple", "kiwi"];
 
-
-
-// var cat = "cat";
-// var dog = "dog";
-
-
-// if (cat === dog) { 
-//     console.log("is the same")
-// } else {
-//     console.log("not the same")
+// for(i = 0; i < fruit.length; i++){
+//     console.log(fruit[i])
 // }
-
 
 // END OF PRELIMINARIES
 
+// var myArray = [];
 
-// var person = {  
-//     name: "Bobby",
-//     age: 18
-//   }
-
-//   if (person.age >= 18 && person.name.charAt(0) === 'B') {
-//       console.log(person.name + " is allowed to go to the movie")
-//   } else {
-//     console.log(person.name + " is not allowed to go to the movie")
-//   }
-
-
-//   END OF BRONZE 
-
-  
-
-
-// if (1 === "1") {
-//     console.log("strict")
-// } else if (1 == "1") {
-//     console.log("loose")
-// } else {
-//     console.log("not equal at all")
+// for(i =9; i > 0; i--) {
+//      myArray.push(i)
 // }
 
+// console.log(myArray);
 
-// if (3 * 4 > 10 && 5 + 10 > 10){
-//     console.log("yes")
+
+// for(i = 0; i < 101; i++) {
+//    if (i % 2 === 0) {console.log(i)
+// }
 // }
 
-// END OF SILVER 
+var myFruit = ["banana", "orange", "apple", "kiwi", "pear", "peach"];
+
+var myArray = []
 
 
+for(i = 0; i < 101; i++) {
+    if (i % 2 === 0) {
+     MyArray.push(i)
+ }
+}
+ 
 
-// Practice #1
-
-// var officeItems = ["stapler", "monitor", "computer", "desk", "lamp", "computer", "lamp", "stapler", "computer",  "computer"] ;
-// var count = 0; 
-
-// for(i = 0; i < officeItems.length; i++){
-//     if(officeItems[i] === "computer"){
-//         count++;
-//     } 
-// }
-
-// console.log(count)
-
-
-
-// Practice #2
-
-// var peopleWhoLikePorn = [  
-//     {
-//       name: "Mike",
-//       age: 17,
-//       gender: "male"
-//     },{
-//       name: "Madeline",
-//       age: 80,
-//       gender: "female"
-//     },{
-//       name: "Cheryl",
-//       age: 22,
-//       gender: "female"
-//     },{
-//       name: "Sam",
-//       age: 30,
-//       gender: "male"
-//     },{
-//       name: "Suzy",
-//       age: 45,
-//       gender: "female"
-//     }
-//   ] 
-
-//   for(i = 0; i < peopleWhoLikePorn.length; i++) {
-//       if(peopleWhoLikePorn[i].age > 18){
-//           console.log(peopleWhoLikePorn[i].name + " is old enough")
-//       } 
-//   }
-
-// Optional Bonus Challenge
-
-// var switchNum = [2, 5, 435, 4, 3].reduce(add, 0);
-
-// function add(a, b) {
-//     return a + b;
-// }
-
-// function lightSwitch() {
-//     if(SwitchNum % 2 = false){
-//         console.log("the light is on")
-//     } else {
-//         console.log("it's dark as fuck")
-//     }
-// }
-
-// lightSwitch();
