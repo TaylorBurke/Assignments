@@ -1,0 +1,20 @@
+* {
+    width: auto;
+    margin: 40px;
+}
+
+.mul {
+    background-color: lightcoral;
+}
+
+.add {
+    background-color: lightseagreen;
+}
+
+.sub {
+    background-color: lightskyblue;
+}
+
+h3 {
+    padding-top: 20px;
+}
