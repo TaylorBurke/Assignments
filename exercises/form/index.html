@@ -4,25 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>The Formula</title>
+   <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Dream Destination</title>
 </head>
 <body>
-    <h1>Make Data Collectors</h1>
-    <h2>Such Forms. Very Magnet.</h2>
+    <h1>You've Just Won A Free Vacation!
+    </h1>
 
 
-<div class="add">
+<div class="form">
 
-<h3>Please Complete:</h3>
-<h4>We Do Not Share Your Info</h4>
-<form name="form">
-        Name:<input type="text" id="name" name="name"/>
+<h2>Please Complete:</ah3>
+<h4>(We Do Not Share Your Info)</h4>
 
-        Email:<input type="email" id="email" name="email"/>
+<form name="demoForm" id="demoForm">
 
-        Password:<input type="password" id="password" name="password"/>
-        
+    <label for = "name">
+        First Name:<input type="text" id="name" name="name">
+    </label>
+<br>
+    <label for = "name2">
+        Last Name:<input type="text" id="name2" name="name2">
+        </label>
+        <br>
+    <label for = "email">
+        Age:<input type="email" id="email" name="email">
+    </label>
+    <br>
+    <label for= "age">
+        Password:<input type="number" id="age" name="age">
+    </label>
+    <br>
+    <label for= "age">
+            Password:<input type="number" id="age" name="age">
+        </label>
+        <br>
+    <label for="">
+        Gender: 
+        &#9794; <input name = "gender" value="Male" type="radio"/>
+        &#9792; <input name = "gender" value="Female" type="radio"/>
+        &#9893; <input name = "gender" value="Other" type="radio"/>
+    </label>
+    <br>
+    <label for= "destination">
+            Destination:<select value ="Select Destination:">
+                <option name="0" value="0">Select Destination:</option>
+                <option name="1" value="1">Moscow, Idaho</option>
+                <option name="2" value="2">Paris, Texas</option>
+                <option name="3" value="3">Athens, Georgia</option>
+            </select>
+
+            
+        </label>
+        <br>
+        <label for = "dietary restrictions">
+                <form action="">
+                    Dietary Restrictions:
+                        <input type="checkbox" name="diet" value="kosher">Kosher
+                        <input type="checkbox" name="diet" value="keto">Keto
+                        <input type="checkbox" name="diet2" value="vegan">Vegan 
+                        </form>
+        </label>
+
+  
+    
+
         <button >Submit</button>
 
 </form>
@@ -30,6 +76,6 @@
 
 
 
-    <script = src "calculator.js"></script>
+    <script = src "./form.js"></script>
 </body>
 </html>
