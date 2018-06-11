@@ -1,0 +1,59 @@
+* {
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    border: brown thin solid;
+    height: 100px;
+    background-color: white;
+}
+
+.logo {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    flex: 2;
+    text-align: center;
+    padding: 5px;
+    height: 30px;
+    background-color: brown;
+}
+
+.menu {
+    vertical-align: center;
+    font-size: 28px;
+    text-emphasis: black;
+    text-decoration-color: darkgrey;
+}
+
+.image {
+    align-content: center;
+}
+
+footer {
+    height: 30px;
+    background-color: whitesmoke;
+}
+
+main {
+    background-color: lightgoldenrodyellow; 
+
+}
+section {
+    background-color: white;
+    margin: 30px;
+    border: 2px solid darkred;
+    padding: 20px;
+}
