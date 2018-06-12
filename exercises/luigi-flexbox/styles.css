@@ -1,0 +1,45 @@
+@font-face {
+    font-family: SuperMarioGalaxy;
+    src: url(SuperMario256.ttf);
+}
+
+.container {
+    display: flex;
+    background-color: yellow;
+
+}
+
+.flag {
+    display: flex;
+    background-color: red;
+
+
+}
+
+#left {
+    flex: 1;
+}
+#circle {
+    flex: 1;
+}
+#right {
+    flex: 1;
+}
+
+
+.special {
+    flex: 1;
+}
+
+
+
+
+h1 {
+    padding-left: 100px;
+    font-family: SuperMarioGalaxy;
+    font-size: 80px;
+}
+
+h2 {
+    font-family: SuperMarioGalaxy;
+}
