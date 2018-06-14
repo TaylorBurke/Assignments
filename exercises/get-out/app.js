@@ -11,6 +11,8 @@ if(readlineSync.keyInSelect(options1, "You wake up in a dark void. Gunshots are 
 
 var options2 = ["blast the door handle with your gun", "try and open the door", "put your hand in the hole"]
 
+//need to create selection var
+
 if(readlineSync.keyInSelect(options2, "As you approach the fight you see dead bodies everywhere. They must have killed themselves. You also see a door, and a mysterious hole. What do you do?")==0){
         console.log("Smart move, looks like you might survive this after all")
 } else if(options2==1){
@@ -18,3 +20,18 @@ if(readlineSync.keyInSelect(options2, "As you approach the fight you see dead bo
 } else if(options2==2){
         console.log("You feel a syringe enter your skin. You are dead")
 }
+
+// need to add while loop
+
+
+// var options = ["open door", "look for key"];
+
+// var keyFound = false;
+// while(true) {
+//         var selection = rs.keyInSelect(options, "What would you like to do?");
+//         if(selection === 0) {
+//                 //look for key
+//         }
+// }
+
+// need to add win condition
