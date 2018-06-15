@@ -1,4 +1,4 @@
-var form = document.getElementById("arline-form");
+var form = document.getElementById("airline-form");
 var submit = document.getElementById("submit");
 var query = document.querySelector;
 
@@ -9,13 +9,13 @@ function formAlert() {
     var gender = form.gender.value;
     var location = form.travelLocation.value;
     var diet = {};
-    if (form.getElementById('vegan').checked) {
+    if (form.diet.checked) {
         diet.push(document.getElementById("vegan").value);
     }
-    if (form.getElementById('gluten').checked) {
+    if (form.diet.checked) {
         diet.push(document.getElementById('gluten').value);
     }
-    if (form.getElementById('paleo').checked) {
+    if (form.diet.checked) {
         diet.push(document.getElementById('paleo').value);
     }
 

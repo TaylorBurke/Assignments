@@ -1,0 +1,164 @@
+body {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color: black;
+    padding-top: 40px;
+    
+}
+
+div {
+    animation-iteration-count: infinite;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: thick solid hotpink;
+    background-color: aquamarine;
+    margin: auto;
+}
+
+.box:hover {
+    width: 100px;
+    height: 100px;
+    border: 20px solid white;
+    background-color: aquamarine;
+    margin: auto;
+    transition-duration: 2s;
+    animation-name: onHover;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes onHover {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1080deg);
+    }
+}
+
+.box1 {
+    border: thick solid hotpink;
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    margin: auto;
+
+}
+
+.box1:hover {
+    width: 100px;
+    height: 100px;
+    border: thick solid white;
+    background-color: burlywood;
+    margin: auto;
+    animation-name: onHover1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes onHover1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1080deg);
+    }
+}
+
+.box2 {
+    border: thick solid hotpink;
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    margin: auto;
+}
+
+.box2:hover {
+    width: 100px;
+    height: 100px;
+    border: 20px solid green;
+    background-color: pink;
+    margin: auto;
+    transition-duration: 3s;
+    animation-name: onHover2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes onHover2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1080deg);
+    }
+}
+
+.box3 {
+    border: thick solid hotpink;
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    margin: auto;
+}
+
+.box3:hover {
+    width: 140px;
+    height: 140px;
+    border: 35px solid rebeccapurple;
+    background-color: white;
+    margin: auto;
+    transition-duration: 21s;
+    animation-name: onHover3;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes onHover3 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(2160deg);
+    }
+}
+
+.box4 {
+    border: thick solid hotpink;
+    width: 100px;
+    height: 100px;
+    background-color: khaki;
+    margin: auto;
+}
+
+.box4:hover {
+    width: 100px;
+    height: 100px;
+    border: thick solid white;
+    background-color: khaki;
+    margin: auto;
+}
+
+.box5 {
+    border: thick solid hotpink;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(155, 155, 219);
+    margin: auto;
+}
+
+.box5:hover {
+    width: 100px;
+    height: 100px;
+    border: thick solid white;
+    background-color: rgb(155, 155, 219);
+    margin: auto;
+}
