@@ -1,0 +1,76 @@
+{
+    "appetizers": {
+        "fruit": [
+            {
+                "name": "honey dew",
+                "ingredients": ["honey dew", "salt"],
+                "price": 3.5
+            },
+            {
+                "name": "watermelon",
+                "ingredients": ["watermelon", "salt"],
+                "price": 3
+            },
+            {
+                "name": "blueberry",
+                "ingredients": ["berrys", "agave"],
+                "price": 4
+            }
+        ],
+        "cold cuts": [
+            {
+                "name": "turkey",
+                "ingredients": ["turkey", "cranberry"],
+                "price": 7
+            },
+            {
+                "name": "ham",
+                "ingredients": ["ham", "honey"],
+                "price": 6.5
+            }
+
+        ]
+    },
+    "entrees": {
+        "hot sandwhiches": [
+            {
+                "name": "reuben",
+                "ingredients": ["rye", "saurkraut"],
+                "price": 12
+            },
+            {
+                "name": "burger",
+                "ingredients": ["hamburger", "mustard"],
+                "price": 10.5
+            }
+        ]
+    },
+    "desserts": {
+        "pie": [
+            {
+                "name": "apple pie",
+                "ingredients": ["sugar", "apple"],
+                "price": 4.5
+            },
+            {
+                "name": "rhubarb pie",
+                "ingredients": ["sugar", "strawberry"],
+                "price": 4.5
+            }
+        ]
+    },
+    "drinks": {
+        "coffee": [
+            {
+                "name": "dark roast",
+                "ingredients": ["sugar", "cream"],
+                "price": 2
+            },
+            {
+                "name": "espresso",
+                "ingredients": ["sugar", "cream"],
+                "price": 3
+            }
+        ]
+    }
+}
