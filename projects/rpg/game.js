@@ -29,7 +29,7 @@ function genRandomEnemy(){
     return new Enemy(names(Math.floor(Math.random)) * 5)
 }
 
-// while(true) {
+while(true) {
 
 var isWalking = rs.question("press W to begin walking");
 
@@ -57,6 +57,7 @@ var enemy = genRandomEnemy();
             }
         }
     }
+}
             //  run or fight
             //   if fight start fight sequence
             //        check hit points of the player and enemy to see who wins
