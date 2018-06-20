@@ -1,5 +1,29 @@
+@font-face{
+    font-family: superMario;
+    src: url(SuperMario256.ttf)
+}
+
 * {
     padding: 10px;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: superMario;
+}
+h2 {
+    font-family: superMario;
+}
 
+body {
+    
+ 
+    background-color: azure;
+}
+
+.wrapper {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}

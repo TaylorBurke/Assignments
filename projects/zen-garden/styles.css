@@ -1,0 +1,43 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+    font: 75% georgia, sans-serif;
+    color: #555753;
+}
+
+header {
+    background-image: url(http://www.csszengarden.com/214/huntington.jpg);
+}
+
+header h1 {
+    font-family: thin sans-serif;
+    text-align: center;
+    color: aliceblue;
+}
+
+header h2 {
+    font-family: thin sans-serif;
+    text-align: center;
+    color: aliceblue;
+}
+
+img {
+    display: block;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 9%;}
+h3 {
+    text-align: center;
+}
+
+p {
+    padding-left: 40px;
+}
+
+.page-wrapper {
+    margin-left: -10px;
+    margin-right: -10px;
+}

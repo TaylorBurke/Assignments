@@ -2,18 +2,19 @@
 // the purpose of this app is to calculate the total bounty of 3 inputs
 
 
-const goomba = Number(document.getElementById("bounty").value);
-const bomb = Number(document.getElementById("bounty1").value);
-const cheep = Number(document.getElementById("bounty2").value);
 
-document.getElementById("submit").addEventListener("click", calculateBounty);
 
-function calculateBounty(goomba, bomb, cheep){
+document.querySelector("button").addEventListener("click", calculateBounty);
+
+function calculateBounty(){
+    var goomba = document.getElementById("bounty").value;
+    var bomb = document.getElementById("bounty1").value;
+    var cheep = document.getElementById("bounty2").value;
 
     var coins = (goomba * 5) + (bomb * 7) + (cheep * 11);
 
-    return(coins);
+
+    document.querySelector("section").innerHTML = "You earned " + coins + " coins!";
 }
 
-console.log(calculateBounty())
 
