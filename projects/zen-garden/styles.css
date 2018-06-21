@@ -41,3 +41,31 @@ p {
     margin-left: -10px;
     margin-right: -10px;
 }
+
+.sidebar {
+    height: 100%;
+    width: 360px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #edf4f0;
+    color: #607476;
+    text-decoration: none;
+    overflow-x: hidden;
+    padding-top: 20px;
+    opacity: 0.5;
+}
+.sidebar a {
+    color: #607476;
+    text-decoration: none;
+  }
+
+.sidebar a:hover, .sidebar a:focus {
+      color: #49968e;
+}
+
+
+@media screen and (max-width: 900px) {
+    .sidebar {display: none;}
+}
