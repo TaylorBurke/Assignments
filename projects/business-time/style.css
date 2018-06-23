@@ -1,8 +1,29 @@
-* {
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    font: 75% georgia, sans-serif;
+    color: #555753;
+    font-family: sans-serif;
+}
+
+.menu {
+    display: flex;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 a {
     color: black;
+    text-decoration: none;
 }
 
 a:hover {
@@ -10,11 +31,9 @@ a:hover {
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    border: brown thin solid;
-    height: 100px;
-    background-color: white;
+    height: 70px;
+    background-color: brown;
+    text-decoration: none;
 }
 
 .logo {
@@ -48,8 +67,7 @@ footer {
 }
 
 main {
-    background-color: lightgoldenrodyellow; 
-
+    background-color: lightgoldenrodyellow;
 }
 section {
     background-color: white;
@@ -57,3 +75,36 @@ section {
     border: 2px solid darkred;
     padding: 20px;
 }
+.body-container {
+    margin: 30px;
+    padding: 87px;
+}
+.logo {
+    align: center;
+    color: black;
+    font-size: 4rem;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+}
+
+.ninja {
+    position: inherit;
+    padding-left: 20vw;
+    animation-name: ninja;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ninja {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+
+
+  }
