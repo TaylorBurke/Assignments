@@ -8,11 +8,10 @@ function convertToBinary(num) {
     while (num > 0) {
         // take the halved number (nextNum) and run it through a loop until nothing is left
         // push the remainder to an array
-        remainder.push(num % 2);
+        remainder.unshift(num % 2);
         num = Math.floor(num / 2);
     }
         // reverse the order of the remainders array
-    remainder.reverse();
     answer = remainder.join("");
     return (answer);
 
