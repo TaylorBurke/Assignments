@@ -1,5 +1,4 @@
-
-const deca = 64;
+const deca = 1024;
 
 function convertToBinary(num) {
     // divide the decimal number by 2 repeatedly
@@ -7,11 +6,10 @@ function convertToBinary(num) {
     let remainder = [];
     while (num > 0) {
         // take the halved number (nextNum) and run it through a loop until nothing is left
-        // push the remainder to an array
+        // unshift the remainder to an array
         remainder.unshift(num % 2);
         num = Math.floor(num / 2);
     }
-        // reverse the order of the remainders array
     answer = remainder.join("");
     return (answer);
 

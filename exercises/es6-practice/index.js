@@ -48,3 +48,8 @@
 
 // addressMaker({city: 'Austin', state: 'Texas'});
 
+const favoriteActivitiesInOrder = ["magnets", "snowboarding", "philanthropy", "janitor work", "eating"];
+
+let [firstFav, secondFav, thirdFav, fourthFav, lastFav] = ["magnets", "snowboarding", "philanthropy", "janitor work", "eating"];
+
+console.log(`My top 3 favorite things are ${firstFav}, ${secondFav}, and ${thirdFav}!`);
