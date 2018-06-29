@@ -1,3 +1,8 @@
+*{
+margin: 0px;
+
+}
+
 .App {
   text-align: center;
 }
@@ -22,14 +27,50 @@
   font-size: large;
 }
 
+img {
+  
+}
+
+.box {
+  color: black;
+  opacity: .2;
+  height: 200px;
+
+}
+
+h1 {
+  position: relative;
+}
+
+h5 {
+  position: relative;
+}
+
 .Footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
-  color: white;
+  background-color: #999991;
+  color: black;
   text-align: center;
+  opacity: .5;
+  padding: 10px;
 }
 
+.Header {
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-clean-blog/img/home-bg.jpg");
+  position: relative;
+  left: 0;
+  top: 0;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 230px;
+  padding-bottom: 200px;
+}
 
+body {
+  font-family: Arial;
+  background-color: grey;
+  color: whitesmoke;
+}
