@@ -1,0 +1,97 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font: 75% georgia, sans-serif;
+  color: #555753;
+  
+}
+
+h2 {
+  color: green;
+}
+
+img {
+  padding: 5px;
+}
+
+a img:hover {
+  position: relative;
+  top: -5px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: url(https://78.media.tumblr.com/f9e525073217b8bae94088b5ba99dba7/tumblr_p9kh97GOEC1sfie3io1_1280.jpg);
+}
+
+header h1 {
+  font-family: thin sans-serif;
+  text-align: center;
+  color: aliceblue;
+}
+
+header h2 {
+  font-family: thin sans-serif;
+  text-align: center;
+  color: aliceblue;
+}
+
+img {
+  display: block;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 9%;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  padding-left: 40px;
+}
+
+.page-wrapper {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 360px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #edf4f0;
+  color: #607476;
+  text-decoration: none;
+  overflow-x: hidden;
+  padding-top: 20px;
+  opacity: 0.5;
+}
+
+.sidebar a {
+  color: #607476;
+  text-decoration: none;
+}
+
+.sidebar a:hover,
+.sidebar a:focus {
+  color: #49968e;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+}
