@@ -4,12 +4,20 @@ import Resume from "./Resume";
 
 const App = function () {
   return (
-    <div className="sidebar">
-      <div className="header">
-      </div>
-      <h2>Taylor's Baby</h2>
-      <Resume />
+    <div className="mainWrapper">
+      
+      <div className="headie">
+
     </div>
+
+    <div className="sidebar">
+      
+      <h2>Taylor Burke</h2>
+      <p>MERN stack Developer looking for interesting problems to solve.</p>
+      <Resume />
+      </div>
+</div>
+    
   );
 }
 

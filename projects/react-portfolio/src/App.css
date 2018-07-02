@@ -1,5 +1,13 @@
 body {
-  display: flex;
+  margin: 0px;
+  background-image: url(https://78.media.tumblr.com/f9e525073217b8bae94088b5ba99dba7/tumblr_p9kh97GOEC1sfie3io1_1280.jpg);
+  background-size: 100%;
+}
+
+.mainWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2vh;
   align-items: center;
   justify-content: space-around;
   margin: 0;
@@ -7,7 +15,6 @@ body {
   font-family: sans-serif;
   font: 75% georgia, sans-serif;
   color: #555753;
-  
 }
 
 h2 {
@@ -28,28 +35,21 @@ html {
   padding: 0;
 }
 
-.header {
-  background-image: url(https://78.media.tumblr.com/f9e525073217b8bae94088b5ba99dba7/tumblr_p9kh97GOEC1sfie3io1_1280.jpg);
-}
-
-header h1 {
-  font-family: thin sans-serif;
-  text-align: center;
-  color: aliceblue;
-}
-
-header h2 {
-  font-family: thin sans-serif;
-  text-align: center;
-  color: aliceblue;
+.headie {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 img {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   padding-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  width: 9%;
+  padding-left: 30px;
+
 }
 
 h3 {
@@ -67,17 +67,24 @@ p {
 
 .sidebar {
   height: 100%;
-  width: 360px;
+  width: 330px;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
   background-color: #edf4f0;
-  color: #607476;
+  color: black;
   text-decoration: none;
   overflow-x: hidden;
   padding-top: 20px;
   opacity: 0.5;
+}
+
+.sidebar h2 {
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .sidebar a {
