@@ -5,10 +5,26 @@
 body {
   background-color: rgb(14, 112, 108);
   color: aliceblue;
-  padding: 3px;
+  padding: 0px;
 }
 
 .home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +57,6 @@ p {
 a {
   color: rgb(0, 61, 78);
   font-size: 3rem;
-  padding: 15px;
   text-decoration: none;
 }
 
@@ -52,8 +67,10 @@ a:hover {
 .navbar {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
   background-color: aliceblue;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  opacity: .8;
 }
 
 .footer {
@@ -61,12 +78,33 @@ a:hover {
   justify-content: space-around;
   align-items: flex-start;
   background-color: rgb(0, 61, 78);
-  padding: 3px;
+  padding-top: 9px;
+  opacity: .8;
+}
+
+.footer a {
+  padding: 2px;
+  color: aliceblue;
+ 
+}
+
+.footer h2 {
+  font-size: 1.6rem;
+}
+
+.footer a:hover {
+  color: rgb(14, 112, 108)
 }
 
 img {
   padding: 8px;
 
+}
+
+.about a{
+  font-size: 1em;
+  display: inline;
+  padding-left: 8px;
 }
 
 @media screen and (max-width: 600px) {
