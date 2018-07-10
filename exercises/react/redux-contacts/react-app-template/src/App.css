@@ -1,0 +1,7 @@
+form {
+  font-size: 2rem;
+  display: flex;
+
+  justify-content: middle;
+  padding: 20px;
+}
