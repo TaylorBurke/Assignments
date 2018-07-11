@@ -11,12 +11,14 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
-    axios.get("http://api.vschool.io:6543/hitlist.json")
-      .then(response => {
-        this.setState({ hits: response.data })
-      })
-  }
+  componentDidMount( 
+
+    axios.get('http://api.vschool.io:6543/hitlist.json')
+    .then()
+
+  )
+
+
   render() {
     return (
       <div class = "wrapper">
