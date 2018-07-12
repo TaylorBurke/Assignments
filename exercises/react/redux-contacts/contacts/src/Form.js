@@ -4,8 +4,6 @@ import { connect } from "react-redux";
 import { addContact } from "./redux";
 
 
-
-
 class Form extends Component {
 
     constructor() {
