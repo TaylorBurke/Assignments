@@ -1,4 +1,35 @@
-import React from 'react'
+import React from 'react';
+import InputForm from './InputForm';
+
+
+class Display extends Component {
+    constructor() {
+      super()
+      this.state = {
+        targets: [],
+      }
+    }
+
+    onSubmit() {
+      axios.get(output)
+      .then(response => {
+        this.setState({ targets: response.data})
+      })
+      // try(err);
+      // catch(err)
+    }
+  
+    render() {
+      return (
+        <div class = "wrapper">
+        <div className="App" class = "grid-container">
+          <Display info={this.state.targets} />
+        </div>
+        </div>
+      );
+    }
+  }
+
 
 const Display = props => {
     const country = props.info.map(targets => {
@@ -11,6 +42,9 @@ const Display = props => {
                 <div class = "Column B">
                 <h3>Capital:</h3>
                 <h4>{targets.capital}</h4>
+
+                <h3>Region:</h3>
+                <h4>{targets.subregion}</h4>
 
                 <h3>Population:</h3>
                 <h4>{targets.population}</h4>

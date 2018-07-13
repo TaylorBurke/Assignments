@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 
 function Hitlist(props){
     const theList = props.info.map(hits =>{

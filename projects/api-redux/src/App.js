@@ -1,27 +1,31 @@
 import React, { Component } from 'react';
 import './App.css';
-import axios from 'axios';
 import Display from './Display';
-import Literal from './Literal'
+import InputForm from './InputForm'
+
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      targets: [],
+      targets: []
     }
   }
 
   render() {
     return (
-      <div class = "wrapper">
-      <div className="App" class = "grid-container">
-        <InputForm />
-        <Display info={this.state.targets} />
+      <div>
+      <h2>Welcome to GeoQuery!</h2>
+      <InputForm />
+        <Display/>
+       
+
       </div>
-      </div>
-    );
+    )
   }
+
 }
+
+
 
 export default App;

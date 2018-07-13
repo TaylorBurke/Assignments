@@ -1,0 +1,25 @@
+body {
+  background-color: aliceblue;
+  padding: 20px;
+  padding-left: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  width: 250px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: darkblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
