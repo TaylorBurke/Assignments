@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import Display from './Display';
-import InputForm from './InputForm'
+import InputForm from './InputForm';
+import Nav from './Nav';
+import Footer from './Footer';
 
 
 class App extends Component {
@@ -15,10 +17,13 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Nav />
+      
       <h2>Welcome to GeoQuery!</h2>
       <InputForm />
         <Display/>
-       
+        
+       <Footer />
 
       </div>
     )

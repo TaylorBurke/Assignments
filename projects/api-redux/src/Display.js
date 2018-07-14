@@ -12,6 +12,8 @@ const Display = (props) => {
     <div>
       <h3>{props.country ? props.country.name : "Total World Population: 7.6B"}</h3>
 
+      <h4>{props.country ? "Local Name: " : ""}{props.country ? props.country.nativeName : ""}</h4>
+
       <img src={props.country ? props.country.flag : "http://moxymnf.com/images/design/thumbnails/CGA_model.png"} />
 
       <h4>{props.country ? "Capital: " : ""}{props.country ? props.country.capital : ""}</h4>
@@ -21,8 +23,6 @@ const Display = (props) => {
       <h4>{props.country ? "Ethnicity: " : ""}{props.country ? props.country.demonym : ""}</h4>
 
       <h4>{props.country ? "Population: " : ""}{props.country ? props.country.population : ""}</h4>
-
-      <h4>{props.country ? "Local Name: " : ""}{props.country ? props.country.nativeName : ""}</h4>
 
       <h4>{props.country ? "Area: " : ""}{props.country ? props.country.area + " sq km" : ""}</h4>
 
