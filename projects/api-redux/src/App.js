@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import Display from './Display';
-import InputForm from './InputForm';
+import Favorites from './Favorites';
+import { Route, Switch } from 'react-router-dom'
 import Nav from './Nav';
 import Footer from './Footer';
+import Information from './Information'
 
 
 class App extends Component {
@@ -16,14 +18,17 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+
+
+      <div className="App">
         <Nav />
-      
-      <h2>Welcome to GeoQuery!</h2>
-      <InputForm />
-        <Display/>
         
-       <Footer />
+        <Switch>
+          <Route exact path="/" component={Display} />
+          <Route path="/favorites" component={Favorites} />
+          <Route path="/information" component={Information} />
+        </Switch>
+        <Footer />
 
       </div>
     )

@@ -1,0 +1,19 @@
+string = "eEk"
+
+function hackerSpeak(str) {
+	
+	for (let i = 0; i < str.length; i ++)
+	
+	if ( str[i] = "e" || "E") {
+			 str[i] = "3"
+			}
+	
+	// for loop to loop through indices of str
+	// conditional statement if index of str = e than it = 3
+	// conditional if index = s than it = 5
+	// condit if = a than = 4
+	// if o than 0
+	
+}
+
+console.log(hackerSpeak (string));

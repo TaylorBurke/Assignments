@@ -4,11 +4,14 @@ import axios from "axios";
 
 const initialState = {
     country: null,
-    loading: false
+    loading: false,
+    favorites: []
 }
 
 const reducer = (prevState = initialState, action) => {
     switch (action.type) {
+        //case ADDTOFAVORITES
+        // return a new state.favorites containing the country from action.country
         case "START_LOADING":
             return {
                 ...prevState,
@@ -38,6 +41,10 @@ export const getCountry = (input) => {
                 })
             })
     }
+}
+
+export const addToFavorites = country => {
+    // return an action containing the country
 }
 
 /////////////////
