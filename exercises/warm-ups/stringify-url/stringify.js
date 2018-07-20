@@ -2,31 +2,36 @@
 
 
 const stringifyUrl = (url, query) => {
-    let obj = {
-        color: 'black',
-        species: 'howler'
+    // if (Object.keys(query).length === 0) return url;
+    let queryString = "?";
+    for (key in query) {
+        queryString += `${key}=${query[key]}&`
     }
+    queryString = queryString.slice(-1);
+    return url + queryString;
 
-    let stringQuery = url + '?' + `color=` + obj.color + `&species=` + obj.species
-
-    return stringQuery;
 }
 
 const objectifyQuery = (url) => {
 
     const queryString = url.substring(url.indexOf("?") + 1);
     const splitQuery = queryString.split("&");
-    const splitByEqual = splitQuery.map( str => str.split("=") )
-    // return queryObject;
+    const splitByEqual = splitQuery.map(str => str.split("="))
+    const queryOject = splitByEqual.reduce((query, subArr) => {
+        query[subArr[0]] = subArr[1];
+        return query;
+    }, {})
+    return queryOject;
 }
 
-const url = 'www.google.com/monkey?color=black&species=howler'
+const url = 'www.google.com/'
 const query = {
     color: 'black',
-    species: 'howler'
+    diet: 'fruit'
+
 }
 
 
-objectifyQuery(url, query);
+console.log(stringifyUrl(url, query));
 
 module.exports = { stringifyUrl, objectifyQuery };

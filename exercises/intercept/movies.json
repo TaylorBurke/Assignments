@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Wonderwoman",
+        "year": 2017,
+        "director": "a lady",
+        "_id": "8be7e73d-1f5a-494f-b0a1-b17d453e6ae3"
+    },
+    {
+        "title": "Wonderman",
+        "year": 2020,
+        "director": "a fake lady",
+        "_id": "be1f4a26-ebe2-47b3-b249-d3c530b59218"
+    },
+    {
+        "title": "Incredibles",
+        "year": 1999,
+        "director": "a dude",
+        "_id": "f7e8032c-d6c1-49fd-aff9-24e88abcc88e"
+    },
+    {
+        "title": "Increidbles 2",
+        "year": 2018,
+        "director": "another dude",
+        "_id": "c6b348e5-113e-495d-a41d-e526733994d5"
+    }
+]
