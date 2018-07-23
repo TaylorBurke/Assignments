@@ -6,11 +6,10 @@ body {
 }
 
 .mainWrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2vh;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -25,10 +24,10 @@ body {
   padding-top: 150px;
 }
 
-/* .mainWrapper p {
+.mainWrapper p {
   position: fixed;
   color: #FFF;
-} */
+}
 
 img {
   padding: 5px;
