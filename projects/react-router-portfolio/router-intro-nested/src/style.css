@@ -1,0 +1,124 @@
+* {
+ 
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+h2 {
+    padding: 20px;  
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.home {
+    
+    height: 200px;
+    background-image: url(https://images.unsplash.com/photo-1508841588335-d91719736d2b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38ecf001b6c849b4e8048ba14ad67e32&auto=format&fit=crop&w=1350&q=80);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    height: 200px;
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.contact {
+    height: 200px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    position: fixed;
+    height: 30px;
+    background-color: #333;
+    color: #ddd;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer {
+    font-size: 8px;
+    background-color: #333;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;
+    height: 200px;
+}
+
+.servicesContainer div:nth-child(1) {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    grid-column: 1;
+}
+
+.servicesContainer div:nth-child(2) {
+    background-color: blue;
+    grid-column: 2;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dogWalking,
+.lawnCare,
+.dayCare {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+
+.dogWalking {
+    background: url('https://images.unsplash.com/photo-1477338811308-e65cea64eefb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=41f259f48274edc697c836f15223d9b1&auto=format&fit=crop&w=1033&q=80');
+    background-position: center;
+    background-size: cover;
+}
+
+.lawnCare {
+    background: url(https://images.unsplash.com/photo-1502481686408-d428268c24ff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dbd7cc7ed7090d2cefe1d922b7d19377&auto=format&fit=crop&w=967&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+.dayCare {
+    background: url(https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d54cdce222b083c93c0f6165307ae626&auto=format&fit=crop&w=1023&q=80);
+    background-position: center;
+    background-size: cover;
+}
