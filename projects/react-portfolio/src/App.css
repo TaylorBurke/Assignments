@@ -1,15 +1,31 @@
 body {
   margin: 0px;
-  background-image: url(https://78.media.tumblr.com/f9e525073217b8bae94088b5ba99dba7/tumblr_p9kh97GOEC1sfie3io1_1280.jpg);
-
+ 
   background-size: 100%;
+}
+
+.mainWrapper:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url(https://images.unsplash.com/photo-1532526674046-5b3f6d7d2ab1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=37ef1a4cfc7260dacab5626e8855fb4b&auto=format&fit=crop&w=1350&q=80);
+  display: block;
+  width: 1800px;
+  height: 1200px;
+  
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
 }
 
 .mainWrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -17,11 +33,9 @@ body {
 }
 
 .mainWrapper h1 {
-  position: fixed;
   color: #edf4f0;
   font-size: 3rem;
-  padding: 50px;
-  padding-top: 150px;
+  padding-left: 20px;
 }
 
 .mainWrapper p {
@@ -65,7 +79,7 @@ h3 {
 }
 
 p {
-  padding-left: 40px;
+  padding-left: 20px;
 }
 
 .page-wrapper {
@@ -89,8 +103,8 @@ p {
 }
 
 .sidebar p {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   font-size: 1rem;
 }
 

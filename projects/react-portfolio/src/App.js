@@ -16,7 +16,7 @@ const App = function () {
       
       <h2>Taylor Burke</h2>
       <h3>MERN Developer</h3>
-      <p>I am a creator and a problem solver. I believe that one day my software will change the world.</p>
+  
       <Resume />
       </div>
 </div>
