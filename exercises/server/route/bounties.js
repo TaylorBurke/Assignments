@@ -1,8 +1,5 @@
 const bountyRouter = require('express').Router();
 
-
-
-
 bountyRouter.route("/bounties")
     .get((req, res ) => {
         res.send("boom");
@@ -13,6 +10,5 @@ bountyRouter.route("/bounties")
         .get()
         .put()
         .delete()
-
 
 module.exports = bountyRouter;
