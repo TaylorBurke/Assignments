@@ -1,6 +1,5 @@
 body {
   margin: 0px;
- 
   background-size: 100%;
 }
 
@@ -14,7 +13,6 @@ body {
   display: block;
   width: 1800px;
   height: 1200px;
-  
   -webkit-filter: blur(3px);
   -moz-filter: blur(3px);
   -o-filter: blur(3px);
@@ -39,7 +37,6 @@ body {
 }
 
 .mainWrapper p {
-  position: fixed;
   color: #FFF;
 }
 
@@ -57,13 +54,67 @@ html {
   padding: 0;
 }
 
+
 .headie {
-  display: grid;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: linear-gradient(to right, #2677a2 20%, #dadada 100%);
+  color: white;
+  text-decoration: none;
+  overflow-x: hidden;
+  opacity: 0.97;
 }
 
-img {
+.headie a {
+  display: flex;
+  padding: 15px;
+  font-size: 1.2rem;
+  justify-content: space-around;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px;
+  padding-top: 17px;
+  width: 200px;
+  transition: all 0.5s;
+} 
+
+.headie a:hover {
+  color: #7ac1e2;
+}
+
+
+
+.portfolioContainer img {
+  float: left;
+  clear: left;
+  overflow: auto;
+  margin: 15px;
+  margin-left: 25px;
+  margin-right: 35px;
+  border: solid thin white;
+  border-radius: 25px;
+
+}
+
+.portfolioContainer p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolioContainer h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+}
+
+.sidebar img {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -71,10 +122,13 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding-left: 30px;
-
 }
 
 h3 {
+  text-align: center;
+}
+
+h5 {
   text-align: center;
 }
 
@@ -82,24 +136,26 @@ p {
   padding-left: 20px;
 }
 
-.page-wrapper {
+/* .page-wrapper {
   margin-left: -10px;
   margin-right: -10px;
-}
+} */
 
 .sidebar {
+  visibility: visible;
   height: 100%;
   width: 330px;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #edf4f0;
+  background-color: #dadada;
   color: black;
   text-decoration: none;
   overflow-x: hidden;
   padding-top: 20px;
-  opacity: 0.5;
+  opacity: 0.65;
+  transition: visibility 1s, opacity .5s linear;
 }
 
 .sidebar p {
@@ -121,13 +177,68 @@ p {
   text-decoration: none;
 }
 
+.name h2 {
+  margin-top: -7px;
+}
+
 .sidebar a:hover,
 .sidebar a:focus {
   color: rgb(18, 111, 172);
 }
 
+.hoverButton a {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: #2677a2;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  opacity: .75;
+}
+
+.hoverButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.hoverButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.hoverButton:hover span {
+  padding-right: 25px;
+}
+
+.hoverButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 @media screen and (max-width: 900px) {
   .sidebar {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity .5s linear;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .portfolioContainer {
+    display: flex;
+    flex-direction: column;
   }
 }
