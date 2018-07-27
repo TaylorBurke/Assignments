@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const sleepSchema = new mongoose.Schema({
+const sleepTransaction = new mongoose.Schema({
     year: {
         type: String,
         required: true
@@ -27,4 +27,4 @@ const sleepSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('food', foodSchema);
+module.exports = mongoose.model('Sleep', sleepTransaction);

@@ -4,25 +4,17 @@ const uuid = require('uuid');
 const mongoose = require('mongoose');
 const sleepRoutes = require('./routes/sleep')
 
-
-// import routes
-//////
-
-
-const data = []
-
 // variables
 const PORT = 3030;
 const app = express();
 
-mongoose.connect("mongodb://localhost/food", (err) => {
-    if (err) throw err;
-    console.log('Connected to the database');
-});
+mongoose.connect("mongodb://localhost:27017/sleep", {useNewUrlParser:true})
+    .then(() => console.log("Connected to MongoDB"))
+    .catch(err => console.error(err));
 
 app.use(bodyParser.json());
 app.use("/sleep", require('./routes/sleep'));
-app.listen(PORT, ()=> console.log(`server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`server running on port ${PORT}`));
 
 
 
