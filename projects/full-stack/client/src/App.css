@@ -3,15 +3,15 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  animation: App-logo-spin infinite 40s linear;
+  height: 70px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  background-color: rgb(240, 222, 255);
+  height: 170px;
+  padding: 30px;
+  color: rgb(40, 0, 85);
 }
 
 .App-title {
@@ -19,7 +19,71 @@
 }
 
 .App-intro {
-  font-size: large;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  color:  rgb(40, 0, 85);
+  width: auto;
+}
+
+.navBar {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  background-color:  rgb(40, 0, 85);
+  font-size: 1.2rem;
+  padding: 8px;
+
+}
+
+.navBar a {
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+  transition: all .4s ease-out;
+}
+
+.navBar a:hover {
+  color: rgb(240, 222, 255);
+  text-decoration: none;
+  
+  font-size: 1.3rem;
+  margin: 13px;
+}
+
+.Form input {
+  display: inline-block;
+  padding: 1em;margin: 1em;
+  font-size: .9rem;
+}
+
+.Form button {
+  font-size: .9rem;
+  display: inline-block;
+  padding: 1em;margin: 1em;
+/*   border-radius: 5px; */
+  text-decoration: none;
+  color: rgb(40, 0, 85);
+  border-radius: 5px;
+  background-image: linear-gradient(rgb(40, 0, 85), rgb(40, 0, 85)), linear-gradient(rgb(240, 222, 255), rgb(240, 222, 255));
+  background-size: 0 5px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all .6s ease-out;
+}
+
+.Form button:hover {
+  background-size: 100% 5px, auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  height: 220px;
+  background: linear-gradient(to bottom, white 20%, rgb(240, 222, 255) 100%);
+  padding: 15px;
 }
 
 @keyframes App-logo-spin {
