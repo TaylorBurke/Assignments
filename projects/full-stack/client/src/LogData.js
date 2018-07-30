@@ -8,4 +8,5 @@ const LogData = () => {
     // post???
 }
 
+
 export default LogData;

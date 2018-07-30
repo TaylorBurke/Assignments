@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+// import axios from 'axios';
 
-const d = new Date();
-// const userInput = {Form Input}
+// const d = new Date();
+// const data = new FormData(event.target);
 
 class Form extends Component {
     constructor() {
@@ -12,20 +13,35 @@ class Form extends Component {
     handleSubmit(event) {
         event.preventDefault();
 
-        console.log(`${d.getFullYear()}/${d.getMonth()}/${d.getDate()}`);
+        // axios.post('/sleep', {
+        //     year: `${d.getFullYear()}`,
+        //     month: `${d.getMonth()}`,
+        //     day: `${d.getDate()}`,
+        //     sleepHours: {userInput}
+
+        // })
+        //     .then(function (response) {
+        //         console.log(response);
+        //     })
+        //     .catch(function (error) {
+        //         console.log(error);
+        //     });
+
+        
     }
 
-    render ( ) {
+
+    render() {
         return (
-        <div className="Form">
-            <form onSubmit={this.handleSubmit} >
-                <input type="text" placeholder="hrs of sleep last night" />
-                <button>Submit</button>
-            </form>
-        </div>
-    )
+            <div className="Form">
+                <form onSubmit={this.handleSubmit} >
+                    <input type="text" placeholder="hrs of sleep last night" />
+                    <button>Submit</button>
+                </form>
+            </div>
+        )
     }
-    
+
 }
 
 export default Form;

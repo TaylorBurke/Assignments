@@ -17,10 +17,6 @@ const sleepTransaction = new mongoose.Schema({
         type: Number,
         required: true
     },
-    isDeposit: {
-        type: Boolean,
-        required: true
-    },
     notes: {
         type: String,
         required: false
