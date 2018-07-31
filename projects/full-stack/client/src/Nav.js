@@ -1,14 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 
 const Nav = () => {
     return (
-        <div className="navBar">
+            <div className="navBar">
+                <Link to="/"> New Transaction </Link>
+                <Link to="/balance"> Account Balance </Link>
+                </div>
 
-            <a href="example.com"> New Transaction </a>
-
-            <a href="example.com"> Account Balance </a>
-        </div>
     )
 }
 

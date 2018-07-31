@@ -1,16 +1,8 @@
 const mongoose = require('mongoose');
 
 const sleepTransaction = new mongoose.Schema({
-    year: {
-        type: String,
-        required: true
-    },
-    month: {
-        type: String,
-        required: true
-    },
-    day: {
-        type: String,
+    date: {
+        type: Date,
         required: true
     },
     sleepHours: {

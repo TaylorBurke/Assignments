@@ -3,12 +3,7 @@ const sleepRoutes = express.Router();
 const Sleep = require("../models/sleep");
 
 sleepRoutes.get('/', (req, res) => {
-    const query = {};
-    if (req.query.isDeposit) {
-        query.isDeposit = req.query.isDeposit;
-    }
-
-    Sleep.find(query, (err, sleep) => {
+    Sleep.find(req.query, (err, sleep) => {
         if (err) return res.status(500).send(err);
         return res.send(sleep);
     });

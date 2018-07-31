@@ -1,33 +1,38 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 
-// const d = new Date();
-// const data = new FormData(event.target);
 
 class Form extends Component {
     constructor() {
-        super()
+        super();
+        this.state = {
+            hours: 0
+        }
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(e) {
+        e.preventDefault();
+        this.setState({[e.target.name]: e.target.value})
+        console.log(e.target.value)
+
     }
 
     handleSubmit(event) {
         event.preventDefault();
 
-        // axios.post('/sleep', {
-        //     year: `${d.getFullYear()}`,
-        //     month: `${d.getMonth()}`,
-        //     day: `${d.getDate()}`,
-        //     sleepHours: {userInput}
+        axios.post('/sleep', {
+            date: new Date(),
+            sleepHours: this.state.hours
+        })
+            .then(function (response) {
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
 
-        // })
-        //     .then(function (response) {
-        //         console.log(response);
-        //     })
-        //     .catch(function (error) {
-        //         console.log(error);
-        //     });
-
-        
     }
 
 
@@ -35,8 +40,10 @@ class Form extends Component {
         return (
             <div className="Form">
                 <form onSubmit={this.handleSubmit} >
-                    <input type="text" placeholder="hrs of sleep last night" />
+
+                    <input type="text" name= "hours"  placeholder="hrs of sleep last night" onChange={this.handleChange}/>
                     <button>Submit</button>
+
                 </form>
             </div>
         )
