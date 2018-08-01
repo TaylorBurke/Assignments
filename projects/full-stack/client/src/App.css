@@ -79,7 +79,33 @@
 .Balance {
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  margin: 5px;
+}
+
+.Balance ul {
+  font-size: 1.3rem;
+  list-style-type: none;
+}
+
+.black {
+  color: rgb(71, 63, 80);
+  border: solid, 1px, gray;
+  padding: 4px
+}
+
+.green {
+  border: solid 1px gray;
+  color: rgb(107, 189, 107);
+  padding: 4px;
+  margin: 2px;
+}
+
+.red {
+  border: solid 1px gray;
+  color: rgb(224, 107, 107);
+  border: solid, 2px, black;
+  padding: 4px;
+  margin: 2px;
 }
 
 .footer {

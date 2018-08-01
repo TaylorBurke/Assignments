@@ -24,8 +24,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font-family: 'Roboto', sans-serif;
   color: #555753;
 }
@@ -53,7 +53,6 @@ html {
   margin: 0;
   padding: 0;
 }
-
 
 .headie {
   z-index: 1;
@@ -83,13 +82,11 @@ html {
   padding-top: 17px;
   width: 200px;
   transition: all 0.5s;
-} 
+}
 
 .headie a:hover {
   color: #7ac1e2;
 }
-
-
 
 .portfolioContainer img {
   float: left;
@@ -100,7 +97,6 @@ html {
   margin-right: 35px;
   border: solid thin white;
   border-radius: 25px;
-
 }
 
 .portfolioContainer p {
@@ -228,6 +224,23 @@ p {
   right: 0;
 }
 
+.Contact {
+  color: white;
+}
+
+.Contact h2 {
+  padding-left: 20px;
+}
+
+.Contact a {
+  color: #7ac1e2;
+  text-decoration: none;
+}
+
+.Contact a:hover {
+  color: #2677a2;
+}
+
 @media screen and (max-width: 900px) {
   .sidebar {
     visibility: hidden;
@@ -237,8 +250,21 @@ p {
 }
 
 @media screen and (max-width: 500px) {
-  .portfolioContainer {
-    display: flex;
-    flex-direction: column;
+  .portfolioContainer img {
+    float: none;
+    clear: none;
+    overflow: auto;
+    margin: 15px;
+    margin-left: 25px;
+    margin-right: 35px;
+    border: solid thin white;
+    border-radius: 25px;
+  }
+  .portfolioContainer h2 {
+    margin-top: 20px;
+  }
+
+  .portfolioContainer p {
+    margin: 12px;
   }
 }

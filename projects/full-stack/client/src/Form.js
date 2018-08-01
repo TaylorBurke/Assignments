@@ -19,8 +19,9 @@ class Form extends Component {
 
     }
 
-    handleSubmit(event) {
-        event.preventDefault();
+    handleSubmit(e) {
+        document.getElementById("injector").innerHTML="Thanks for the info!";
+        e.preventDefault();
 
         axios.post('/sleep', {
             date: new Date(),
@@ -39,12 +40,15 @@ class Form extends Component {
     render() {
         return (
             <div className="Form">
+                
                 <form onSubmit={this.handleSubmit} >
 
                     <input type="text" name= "hours"  placeholder="hrs of sleep last night" onChange={this.handleChange}/>
                     <button>Submit</button>
 
                 </form>
+
+                <p id="injector">Enter a whole number value.</p>
             </div>
         )
     }

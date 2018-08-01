@@ -18,7 +18,7 @@ class App extends Component {
             <img src={logo} className="App-logo" alt="logo" />
             <h1 className="App-title">Welcome to Sleep Bank</h1>
             <p className="App-intro">
-              Track your sleep and see your account balance in one place.
+              Track your sleep in one place.
         </p>
           </header>
 
