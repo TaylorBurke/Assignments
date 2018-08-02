@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -77,8 +78,6 @@
 }
 
 .Balance {
-  display: flex;
-  flex-direction: column;
   margin: 5px;
 }
 
@@ -96,16 +95,16 @@
 .green {
   border: solid 1px gray;
   color: rgb(107, 189, 107);
-  padding: 4px;
-  margin: 2px;
+  padding: 6px;
+  margin: 3px;
 }
 
 .red {
   border: solid 1px gray;
   color: rgb(224, 107, 107);
   border: solid, 2px, black;
-  padding: 4px;
-  margin: 2px;
+  padding: 6px;
+  margin: 3px;
 }
 
 .footer {

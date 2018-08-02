@@ -23,18 +23,23 @@ class Balance extends Component {
         console.log(this.state);
         return (
 
-
+// if query for date returns result this becomes a put instead of a post
 
             <div className="Balance" >
                 <h2>Your Balance for the Week:</h2>
                 <p>{this.state.transactions.map((trans, i) => {
 
+                    const averageSet = [];
                     let sleepTimes = trans.sleepHours;
 
-                    // for (i = 0; i < sleepTimes.length; i++)
-                    // return sleepTimes[i]
+                    for (let i = 0; i < sleepTimes.length; i++);
+                    averageSet.push(sleepTimes[i]);
 
-                    return sleepTimes
+                    {/* if (sleepTimes / sleepTimes.length > 7) {
+
+                    } */}
+
+                    return averageSet;
 
                 })
 
@@ -54,31 +59,31 @@ class Balance extends Component {
                         let date = new Date(trans.date);
                         const datePretty = date.getDay();
 
-                        let dayOf;
+                        let nightOf;
 
                         if (datePretty === 0) {
-                            dayOf = "Sunday"
+                            nightOf = "Saturday"
                         }
                         if (datePretty === 1) {
-                            dayOf = "Monday"
+                            nightOf = "Sunday"
                         }
                         if (datePretty === 2) {
-                            dayOf = "Tuesday"
+                            nightOf = "Monday"
                         }
                         if (datePretty === 3) {
-                            dayOf = "Wednesday"
+                            nightOf = "Tuesday"
                         }
                         if (datePretty === 4) {
-                            dayOf = "Thursday"
+                            nightOf = "Wednesday"
                         }
                         if (datePretty === 5) {
-                            dayOf = "Friday"
+                            nightOf = "Thursday"
                         }
                         if (datePretty === 6) {
-                            dayOf = "Saturday"
+                            nightOf = "Friday"
                         }
 
-                        const getSleepHours = <li className={color}>{`On ${dayOf} you slept ${trans.sleepHours} hours.`}</li>
+                        const getSleepHours = <li className={color}>{`On ${nightOf} night you slept ${trans.sleepHours} hours.`}</li>
 
                         return getSleepHours
                     })
