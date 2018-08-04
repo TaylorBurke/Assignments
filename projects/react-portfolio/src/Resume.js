@@ -6,7 +6,7 @@ function Resume() {
     return (
         <div className='resumeContainer'>
             <div className = "name"><h2>Taylor Burke</h2></div>
-            <h3>full stack web developer</h3>
+            <h3>JavaScript Developer</h3>
             <h5>creative && problemSolver ? collaborate : !collaborate</h5>
             <a href="https://drive.google.com/file/d/12kPSGDEOaa1zgt6VIi6mC7IlMMd4WeaH/view?usp=sharing" target="blank"><img src={resumeicon} width="110px" alt="" /></a>
 

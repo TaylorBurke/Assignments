@@ -1,12 +1,30 @@
 import React, { Component } from 'react';
-// import ReactDom from 'react-dom';
 import axios from 'axios';
 
 
 
 class Balance extends Component {
-    state = {
-        transactions: []
+    constructor() {
+        super();
+        this.state = {
+            transactions: []
+        }
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick(e, id) {
+        e.preventDefault();
+        axios.delete(`/sleep/${id}`)
+            .then(res => {
+                const deletedId = res.data._id;
+                const initState = this.state.transactions;
+                const newState = initState.filter(trans => trans._id !== deletedId) 
+                this.setState({transactions: newState}) 
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
     }
 
     componentDidMount() {
@@ -19,82 +37,75 @@ class Balance extends Component {
             });
     }
 
+
+
     render() {
-        console.log(this.state);
+
+            const getAverage = this.state.transactions.reduce((acc, trans) => {
+                return acc + trans.sleepHours
+            }, 0) / this.state.transactions.length
+            
+            let newColor = getAverage >= 7 ? "green" : "red";
+
         return (
 
-// if query for date returns result this becomes a put instead of a post
 
             <div className="Balance" >
-                <h2>Your Balance for the Week:</h2>
-                <p>{this.state.transactions.map((trans, i) => {
+                <h3 className={`average ${newColor}`}>Your Average for the Week: {getAverage} hours
+                </h3>
 
-                    const averageSet = [];
-                    let sleepTimes = trans.sleepHours;
+                    {
+                        this.state.transactions.map((trans, i) => {
 
-                    for (let i = 0; i < sleepTimes.length; i++);
-                    averageSet.push(sleepTimes[i]);
+                            let color;
 
-                    {/* if (sleepTimes / sleepTimes.length > 7) {
+                            if (trans.sleepHours >= 7) {
+                                color = "green"
+                            } else {
+                                color = "red"
+                            }
 
-                    } */}
+                            let date = new Date(trans.date);
+                            const datePretty = date.getDay();
 
-                    return averageSet;
+                            let nightOf;
 
-                })
+                            if (datePretty === 0) {
+                                nightOf = "Saturday"
+                            }
+                            if (datePretty === 1) {
+                                nightOf = "Sunday"
+                            }
+                            if (datePretty === 2) {
+                                nightOf = "Monday"
+                            }
+                            if (datePretty === 3) {
+                                nightOf = "Tuesday"
+                            }
+                            if (datePretty === 4) {
+                                nightOf = "Wednesday"
+                            }
+                            if (datePretty === 5) {
+                                nightOf = "Thursday"
+                            }
+                            if (datePretty === 6) {
+                                nightOf = "Friday"
+                            }
 
-                }</p>
-                <ul>
+                            const getSleepHours = <div key={i} className={color}> {`On ${nightOf} night you slept ${trans.sleepHours} hours. `}
 
-                    {this.state.transactions.map((trans, i) => {
+                                <button onClick={(e) => this.handleClick
+                                    (e, trans._id)} className="tooltip">&#9747;
+    
+                                    <span className="tooltiptext">Delete</span>
 
-                        let color;
+                                </button> </div>
 
-                        if (trans.sleepHours > 6) {
-                            color = "green"
-                        } else {
-                            color = "red"
-                        }
-
-                        let date = new Date(trans.date);
-                        const datePretty = date.getDay();
-
-                        let nightOf;
-
-                        if (datePretty === 0) {
-                            nightOf = "Saturday"
-                        }
-                        if (datePretty === 1) {
-                            nightOf = "Sunday"
-                        }
-                        if (datePretty === 2) {
-                            nightOf = "Monday"
-                        }
-                        if (datePretty === 3) {
-                            nightOf = "Tuesday"
-                        }
-                        if (datePretty === 4) {
-                            nightOf = "Wednesday"
-                        }
-                        if (datePretty === 5) {
-                            nightOf = "Thursday"
-                        }
-                        if (datePretty === 6) {
-                            nightOf = "Friday"
-                        }
-
-                        const getSleepHours = <li className={color}>{`On ${nightOf} night you slept ${trans.sleepHours} hours.`}</li>
-
-                        return getSleepHours
-                    })
+                            return getSleepHours
+                        })
 
                     }
-                </ul>
-                <div>
-                    <ul>
-                    </ul>
-                </div>
-
+           
             </div>
         )
     }

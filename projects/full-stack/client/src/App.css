@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-logo {
@@ -10,6 +12,7 @@
 
 .App-header {
   background-color: rgb(240, 222, 255);
+  width: 100%;
   height: 170px;
   padding: 30px;
   color: rgb(40, 0, 85);
@@ -29,12 +32,12 @@
 
 .navBar {
   display: flex;
-  width: auto;
+  width: 100%;
   justify-content: center;
   background-color:  rgb(40, 0, 85);
   font-size: 1.2rem;
   padding: 8px;
-
+  box-shadow: 0 3px 7px rgba(0,0,0,0.12), 0 3px 4px rgba(0,0,0,0.24);
 }
 
 .navBar a {
@@ -56,6 +59,7 @@
   display: inline-block;
   padding: 1em;margin: 1em;
   font-size: .9rem;
+  margin-bottom: 60px;
 }
 
 .Form button {
@@ -78,43 +82,114 @@
 }
 
 .Balance {
-  margin: 5px;
+  display: flex;
+  border: rgb(71, 63, 80) 2px solid;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  margin-bottom: 50px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
-.Balance ul {
-  font-size: 1.3rem;
-  list-style-type: none;
-}
-
-.black {
+.Balance h2 {
   color: rgb(71, 63, 80);
-  border: solid, 1px, gray;
-  padding: 4px
+
+}
+
+.average {
+ color: rgb(71, 63, 80);
 }
 
 .green {
-  border: solid 1px gray;
   color: rgb(107, 189, 107);
+  border: solid 1px rgb(71, 63, 80);
+  width: 400px;
   padding: 6px;
   margin: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .red {
-  border: solid 1px gray;
   color: rgb(224, 107, 107);
-  border: solid, 2px, black;
+  border: solid 1px rgb(71, 63, 80);
+  width: 400px;
   padding: 6px;
   margin: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.tooltip {
+  background-color:rgb(240, 222, 255);
+  font-size: 1rem;
+  margin: 5px;
+  margin-top: 6px;
+  position: relative;
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: 0px 1px rgb(71, 63, 80);
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: rgb(71, 63, 80);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0.1;
+  transition: opacity 0.8s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(71, 63, 80) transparent transparent transparent;
+}
+
+.tooltip:hover {
+  box-shadow: 0px 1px #fff;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: .8;
+}
+
+#injector {
+  color: rgb(71, 63, 80);
+  margin: 50px;
 }
 
 .footer {
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
   align-items: center;
-  height: 220px;
+  height: 280px;
   background: linear-gradient(to bottom, white 20%, rgb(240, 222, 255) 100%);
-  padding: 15px;
+  padding: 5px;
+}
+
+.footer a {
+  margin-top: 100px;
+}
+
+.footer a:hover {
+  margin-top: 94px;
 }
 
 @keyframes App-logo-spin {

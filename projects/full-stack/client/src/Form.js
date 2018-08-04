@@ -15,7 +15,6 @@ class Form extends Component {
     handleChange(e) {
         e.preventDefault();
         this.setState({[e.target.name]: e.target.value})
-        console.log(e.target.value)
 
     }
 
@@ -36,19 +35,18 @@ class Form extends Component {
 
     }
 
-
     render() {
         return (
             <div className="Form">
-                
+            <div id="injector">How many hours of sleep did you get last night?</div>
                 <form onSubmit={this.handleSubmit} >
 
-                    <input type="text" name= "hours"  placeholder="hrs of sleep last night" onChange={this.handleChange}/>
+                    <input type="text" name= "hours"  placeholder="Enter a number value" onChange={this.handleChange}/>
                     <button>Submit</button>
 
                 </form>
 
-                <p id="injector">Enter a whole number value.</p>
+                
             </div>
         )
     }

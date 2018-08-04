@@ -102,12 +102,14 @@ html {
 .portfolioContainer p {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .portfolioContainer h2 {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin-top: 130px;
+  margin-left: 15px;
 }
 
 .sidebar img {
@@ -120,6 +122,10 @@ html {
   padding-left: 30px;
 }
 
+h2 {
+  color: white;
+}
+
 h3 {
   text-align: center;
 }
@@ -129,7 +135,10 @@ h5 {
 }
 
 p {
+  padding: 12px;
   padding-left: 20px;
+  padding-bottom: 40px;
+  padding-right: 15px;
 }
 
 /* .page-wrapper {
