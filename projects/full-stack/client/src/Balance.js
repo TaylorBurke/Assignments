@@ -41,6 +41,8 @@ class Balance extends Component {
 
     render() {
 
+        // get the average of the sleep hours 
+
             const getAverage = this.state.transactions.reduce((acc, trans) => {
                 return acc + trans.sleepHours
             }, 0) / this.state.transactions.length
@@ -93,7 +95,7 @@ class Balance extends Component {
                             }
 
                             const getSleepHours = <div key={i} className={color}> {`On ${nightOf} night you slept ${trans.sleepHours} hours. `}
-
+                                <br />
                                 <button onClick={(e) => this.handleClick
                                     (e, trans._id)} className="tooltip">&#9747;
     
