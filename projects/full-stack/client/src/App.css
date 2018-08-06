@@ -36,7 +36,6 @@
   justify-content: center;
   background-color:  rgb(40, 0, 85);
   font-size: 1.2rem;
-  padding: 8px;
   box-shadow: 0 3px 7px rgba(0,0,0,0.12), 0 3px 4px rgba(0,0,0,0.24);
 }
 
@@ -181,7 +180,6 @@
   align-items: center;
   height: 280px;
   background: linear-gradient(to bottom, white 20%, rgb(240, 222, 255) 100%);
-  padding: 5px;
 }
 
 .footer a {
