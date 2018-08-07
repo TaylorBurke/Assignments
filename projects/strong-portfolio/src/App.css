@@ -42,12 +42,11 @@
   border: 2px black solid;
   margin: 5px;
 }
-
+/* talk to Jared about transition */
 .WrapChild {
   margin: 5px;
   padding: 5px;
   border: thin red solid;
-
 }
 
 .App-intro {
