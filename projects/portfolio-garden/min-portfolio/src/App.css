@@ -1,104 +1,28 @@
-/* :root {
-  filter: invert(100%);
-  background-color: aliceblue;
-}
-
-* { 
-  background-color: inherit;
-} */
-
-.hexagon {
-  overflow: hidden;
-  visibility: hidden;
-  -webkit-transform: rotate(120deg);
-     -moz-transform: rotate(120deg);
-      -ms-transform: rotate(120deg);
-       -o-transform: rotate(120deg);
-          transform: rotate(120deg);
-  cursor: pointer;
-  }
-.hexagon-in1 {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: rotate(-60deg);
-     -moz-transform: rotate(-60deg);
-      -ms-transform: rotate(-60deg);
-       -o-transform: rotate(-60deg);
-          transform: rotate(-60deg);
-  }
-.hexagon-in2 {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-image: url('../src/pics/geo.png');
-  visibility: visible;
-  -webkit-transform: rotate(-60deg);
-     -moz-transform: rotate(-60deg);
-      -ms-transform: rotate(-60deg);
-       -o-transform: rotate(-60deg);
-          transform: rotate(-60deg);
-  }
-.hexagon-in2:hover {
-  background-image: url('../src/pics/geo-wide.png');
-  }
-
-.hexagon1 {
-  width: 400px;
-  height: 200px;
-  margin: 0 0 0 -80px;
-  }
-.hexagon2 {
-  width: 200px;
-  height: 400px;
-  margin: -80px 0 0 20px;
-  }
-.dodecagon {
-  width: 200px;
-  height: 200px;
-  margin: -80px 0 0 20px;
-  }
-
-img {
-  border-radius: 90px;
-  margin: 20px;
-  border: 2px solid aliceblue;
-}
-
-/* img:not([src*=".svg"]), video {  
-  filter: invert(100%);
-} */
-
-
 html {
-  font-size: 62.5%
+  font-size: 62.5%;
+  font-family: 'Playfair Display', serif;
 }
 
+body {
+  font-family: 'Playfair Display', serif;
 
+}
 
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 400vh;
 }
 
 .Headline {
+  min-height: 10vh;
   position: fixed;
   width: 100%;
   left: 0;
   height: 1rem;
   top: 0;
-  z-index: 12;
-  background-color: rgb(177, 25, 28);
-}
-
-.Toggle {
-  margin: 30px;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 13;
+  z-index: 1;
+  background-color: rgba(190, 190, 190, 0.141);
 }
 
 button {
@@ -117,40 +41,39 @@ button:hover {
   transition-duration: .5s;
 }
 
-.Fade {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  height: 6rem;
-  top: 0;
-  z-index: 11;
-  background-image: linear-gradient(#eee 15%, transparent 85%);
-}
-
 .App-header {
-  background-color: #eee;
-  z-index: 11;
-  color: #444;
+  min-height: 100vh;
+  padding: 60px;
+  background-image: url("./pics/h-alt.jpeg");
+  z-index: 0;
+  color: white;
   flex: 1
 }
 
-.App-title {
-  margin: 20px;
-  margin-top: 80px;
-  font-size: 2.6rem;
- 
+.App-intro {
+  min-height: 100vh;
+  padding: 60px;
+  background-color: whitesmoke;
+  z-index: 0;
+  color: black;
+  flex: 1
 }
 
-.App-subtitle{
-  margin: 20px;
-  font-size: 1.8rem
+
+.App-title {
+  text-decoration: bold;
+  display: block;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 40px;
+  font-size: 4.6rem;
+  z-index: 0;
 }
 
 .Header-paragraph{
   margin: 20px;
   font-size: 1.2rem
 }
-
 
 .App-intro {
   margin: 20px;

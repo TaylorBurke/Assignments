@@ -5,7 +5,21 @@
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "react-hamburger-menu": "^1.1.1",
+    "react-scripts": "1.1.4",
+    "@babel/cli": "^7.0.0-beta.40",
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "@babel/preset-react": "^7.0.0-beta.40",
+    "babel-loader": "8.0.0-beta.0",
+    "babel-register": "^6.26.0",
+    "expect": "1.13.4",
+    "prop-types": "15.5.7",
+    "tap-spec": "4.1.1",
+    "tape": "4.4.0",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
   },
   "scripts": {
     "start": "react-scripts start",
