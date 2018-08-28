@@ -5,7 +5,6 @@ html {
 
 body {
   font-family: 'Playfair Display', serif;
-
 }
 
 .App {
@@ -25,57 +24,3 @@ body {
   background-color: rgba(190, 190, 190, 0.141);
 }
 
-button {
-  font-size: 2rem;
-  padding-left: 11px;
-  padding-right: 11px;
-  border-radius: 8px;
-  border: rgba(177, 25, 28) 2px solid;
-  background-color: rgba(177, 25, 28, .9);
-  color: white;
-}
-
-button:hover {
-  border: rgba(255, 0, 4, 0.8) 2px solid;
-  background-color: rgba(255, 0, 4, 0.8);
-  transition-duration: .5s;
-}
-
-.App-header {
-  min-height: 100vh;
-  padding: 60px;
-  background-image: url("./pics/h-alt.jpeg");
-  z-index: 0;
-  color: white;
-  flex: 1
-}
-
-.App-intro {
-  min-height: 100vh;
-  padding: 60px;
-  background-color: whitesmoke;
-  z-index: 0;
-  color: black;
-  flex: 1
-}
-
-
-.App-title {
-  text-decoration: bold;
-  display: block;
-  position: absolute;
-  margin-top: 40px;
-  margin-left: 40px;
-  font-size: 4.6rem;
-  z-index: 0;
-}
-
-.Header-paragraph{
-  margin: 20px;
-  font-size: 1.2rem
-}
-
-.App-intro {
-  margin: 20px;
-  font-size: 2rem
-}

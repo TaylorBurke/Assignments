@@ -1,0 +1,18 @@
+.App-header {
+    min-height: 80vh;
+    max-height: 80vh;
+    background-image: url("../pics/h-alt.jpeg");
+    z-index: 0;
+    color: white;
+    flex: 1
+}
+
+.App-title {
+    text-decoration: bold;
+    display: block;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 4.6rem;
+    z-index: 0;
+}

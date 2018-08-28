@@ -1,35 +1,35 @@
-var readline = require('readline-sync');
-var chalk = require('chalk');
+// var readline = require('readline-sync');
+// var chalk = require('chalk');
 
-var Enemies = (arg) => {
-    //create object class
-}
+// var Enemies = (arg) => {
+//     //create object class
+// }
 
-var items = [
-    milk,
-    mechSuit,
-    kinkyWhip
-]
+// var items = [
+//     milk,
+//     mechSuit,
+//     kinkyWhip
+// ]
 
-milk = (arg) => {
-    // act on player object to reset HP value
-    return arg
-},
+// milk = (arg) => {
+//     // act on player object to reset HP value
+//     return arg
+// },
 
-// milk: restore HP
-// mech suit: double HP
-// kinky whip: double attack power / or you attack first?
+// // milk: restore HP
+// // mech suit: double HP
+// // kinky whip: double attack power / or you attack first?
 
-var inventory = []
-// create char
+// var inventory = []
+// // create char
 
-// wild creature appears
-// engage enemy
-    // run from fight
+// // wild creature appears
+// // engage enemy
+//     // run from fight
 
-// kill enemy get random item
+// // kill enemy get random item
 
-// break loop if hp < 0
+// // break loop if hp < 0
 
 
 
@@ -40,7 +40,8 @@ const rs = require("readline-sync");
 var alive = true;
 
 //Introduction to game
-console.log("Welcome to the Defence of the Ancients!\n");
+console.log("You find yourself on a strange planet... Gazorpazorp!!\n");
+console.log("You see a friendly looking anthropomorphic ball of Goop!\n");
 
 //Player name input
 var Player = function (name) {
@@ -48,9 +49,9 @@ var Player = function (name) {
     (this.hp = 100),
     (this.atk = Math.floor(Math.random() * 10) + 20);
 };
-var dk = new Player("Dragon Knight");
-var playerName = rs.question("Please input name\n");
-console.log(`${playerName} spawned as ${dk.name} at the Radiant fountain.`);
+var dk = new Player("Human");
+var playerName = rs.question("What do they call you, stranger?");
+console.log(`"They call me ${playerName} you say. I am a ${dk.name} from the planet Earth. I would like to see if I can find a way home..." you reply.`);
 
 //Enemy constructor
 var Enemy = function (name) {

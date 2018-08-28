@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './Header';
+import Header from './Header/Header';
+import Intro from './Intro/Intro';
 import Content from './Content';
 import Headline from './Headline';
 
@@ -11,7 +12,7 @@ class App extends Component {
         <Headline />
         <Header />
         <div className="App-intro">
-          Info
+          <Intro />
         </div>
 
         <Content />

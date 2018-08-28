@@ -1,4 +1,5 @@
 import React from 'react';
+import './Intro.css';
 
 const Intro = () => {
     return (
@@ -9,7 +10,8 @@ const Intro = () => {
             <div className="Header-paragraph">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt atque qui voluptatem et totam non ducimus voluptate praesentium facere ea illo veritatis unde optio rerum id, aut cupiditate cumque eaque.
 
-                <a href="#"> How I make Websites</a>
+                <div><a className ="opacity" href="#"> How I make Websites</a></div>
+
             </div>
 
 
@@ -18,4 +20,4 @@ const Intro = () => {
     )
 }
 
-export default Content;
+export default Intro;

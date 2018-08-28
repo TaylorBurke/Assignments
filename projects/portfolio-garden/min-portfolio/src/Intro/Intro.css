@@ -1,0 +1,55 @@
+.App-intro {
+    min-height: 100vh;
+    z-index: 0;
+    color: black;
+    flex: 1;
+    margin: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.Header {
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 2.2rem;
+}
+
+.Header-paragraph {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 70vw;
+}
+
+a {
+    width: 90%;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+    width: 120px;
+    height: auto;
+    padding: 5px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 10px;
+    position: relative;
+}
+
+.opacity {
+    border: 1px solid #000;
+    overflow: hidden;
+    transition: 0.2s linear, color 0.1s linear;
+    background: rgba(255, 255, 255, 0);
+}
+
+.opacity:hover {
+    color: #fff;
+    background: rgb(0, 0, 0);
+}
