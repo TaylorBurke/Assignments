@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Header/Header';
 import Intro from './Intro/Intro';
-import Content from './Content';
 import Headline from './Headline';
+import Projects from './Projects/Projects';
+import Footer from './Footer/Footer';
 
 class App extends Component {
   render() {
@@ -11,11 +12,9 @@ class App extends Component {
       <div className="App">
         <Headline />
         <Header />
-        <div className="App-intro">
-          <Intro />
-        </div>
-
-        <Content />
+        <Intro />
+        <Projects />
+        <Footer />
       </div>
     );
   }

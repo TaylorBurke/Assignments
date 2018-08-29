@@ -1,0 +1,30 @@
+ .Footer {
+    min-height: 40vh;
+    max-height: auto;
+    background-image: url("../pics/footer.jpg");
+    filter: grayscale(90) brightness(1.24);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    color: white;
+    flex: 1;
+}
+
+.Footer-header {
+    font-size: 4rem;
+    padding: 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+    left: 10px;
+    color: black;
+}
+
+.Footer-paragraph {
+    font-size: 2.2rem;
+    padding: 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+    left: 10px;
+    color: black;
+
+}

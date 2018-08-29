@@ -1,19 +1,29 @@
 .App-intro {
-    min-height: 100vh;
+    min-height: 360px;
+    max-height: 380px;
     z-index: 0;
     color: black;
     flex: 1;
-    margin: 20px;
     font-size: 2rem;
     text-align: center;
+    flex: 1;
+    background-image: url("../pics/white.jpeg");
+    filter: grayscale(90);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .Header {
+    margin-top: 15px;
     font-style: italic;
     position: relative;
     display: inline-block;
     vertical-align: top;
-    font-size: 2.2rem;
+}
+
+.Header h1 {
+    padding: 20px;
+    font-size: 3rem;
 }
 
 .Header-paragraph {
@@ -21,24 +31,24 @@
     text-align: center;
     font-size: 1.2rem;
     max-width: 70vw;
+    padding: 5px;
 }
 
-a {
+.App-intro a {
     width: 90%;
-    margin: 0 auto;
     display: inline-block;
     vertical-align: top;
-    width: 120px;
+    width: auto;
     height: auto;
-    padding: 5px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
     line-height: 36px;
-    text-transform: uppercase;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.1em;
     text-align: center;
-    font-size: 0.8rem;
-    margin: 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
     position: relative;
 }
 
@@ -47,6 +57,7 @@ a {
     overflow: hidden;
     transition: 0.2s linear, color 0.1s linear;
     background: rgba(255, 255, 255, 0);
+    margin: 20px;
 }
 
 .opacity:hover {

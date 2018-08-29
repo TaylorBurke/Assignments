@@ -1,18 +1,22 @@
 .App-header {
-    min-height: 80vh;
-    max-height: 80vh;
+    min-height: 190px;
+    max-height: 320px;
     background-image: url("../pics/h-alt.jpeg");
+    filter: grayscale(90);
+    /* filter: brightness(40%); */
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: 0;
     color: white;
-    flex: 1
+    flex: 1;
 }
 
-.App-title {
-    text-decoration: bold;
-    display: block;
-    position: absolute;
+.App-title h1 {
+    font-size: 4rem;
+    padding: 20px;
     margin-top: 40px;
-    margin-left: 40px;
-    font-size: 4.6rem;
-    z-index: 0;
-}
+    margin-left: 30px;
+    left: 10px;
+}   
+
+

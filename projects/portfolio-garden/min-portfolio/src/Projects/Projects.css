@@ -1,0 +1,88 @@
+.Projects {
+    background-color: black;
+    max-height: auto;
+    z-index: 3;
+    color: white;
+    flex: 1;
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.Projects-header {
+    z-index: 0;
+    color: white;
+    margin: 20px;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 15px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 2.4rem;
+}
+
+.Header-paragraph {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 70vw;
+    margin: 25px;
+}
+
+ol {
+    list-style-type: none;
+    display: block;
+    padding-left: 0;
+}
+
+li {
+    border-top: 1px solid #282828;
+    position: relative;
+    transition: .3s;
+    display: block;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+li:hover {
+    background-color: rgb(19, 19, 19);
+}
+
+.Projects a {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    height: auto;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 36px;
+    text-decoration: none;
+    color: #888;
+    /* text-align: center; */
+    font-size: 1.2rem;
+    margin: 25px;
+}
+
+.arrow {
+    float: right;
+    text-align: right;
+    position: absolute;
+    right: 50px;
+}
+
+.pop {
+    overflow: hidden;
+    transition: 0.2s linear, color 0.1s linear;
+    background: rgba(255, 255, 255, 0);
+}
+
+.pop:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0)
+}

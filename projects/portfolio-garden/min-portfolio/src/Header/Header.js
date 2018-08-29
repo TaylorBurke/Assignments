@@ -4,12 +4,11 @@ import './Header.css';
 const Header = () => {
     return (
         <div className="App-header">
-
-            <div className="App-title">Hi! I'm Taylor Burke.
-                <br/>
-            I design fast and easy websites!
+        <div className="App-title">
+            <h1>Hi! I'm Taylor Burke.
+            I make sublime websites!</h1>
             </div>
-
+            
         </div>
     )
 }
