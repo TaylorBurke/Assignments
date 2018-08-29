@@ -6,6 +6,7 @@ import Headline from './Headline';
 import Projects from './Projects/Projects';
 import Footer from './Footer/Footer';
 
+
 class App extends Component {
   render() {
     return (
