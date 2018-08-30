@@ -5,22 +5,29 @@ html {
 
 body {
   font-family: 'Playfair Display', serif;
+  background-color: black;
 }
 
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 400vh;
+  flex: 1;
 }
 
 .Headline {
+  color: white;
   min-height: 10vh;
   position: fixed;
   width: 100%;
   left: 0;
   height: 1rem;
   top: 0;
-  z-index: 1;
-  background-color: rgba(190, 190, 190, 0.141);
+  z-index: 11;
+  background-color: rgba(190, 190, 190, 0);
 }
 
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+}

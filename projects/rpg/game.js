@@ -24,6 +24,7 @@ var playerName = rs.question('"What do they call you, stranger?" the gloop squir
 console.log(`\n"They call me ${playerName}" you reply. "I am a ${man.name} from the planet Earth. I would like to see if I can find a way home..." \n \n "Oh! Well, the spaceport is that way," it responds. You trail off in the direction his noodley appendage points.`);
 
 //Enemy constructor
+
 var Enemy = function (name) {
     (this.name = name),
         (this.hp = 100),

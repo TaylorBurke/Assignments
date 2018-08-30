@@ -1,6 +1,6 @@
 import React from 'react';
-import './Footer.css'
-import $ from "jquery";
+import './Footer.css';
+import $ from 'jquery'
 
 $(function () {  // $(document).ready shorthand
     $('.monster').fadeIn('slow');
@@ -17,10 +17,10 @@ $(document).ready(function () {
             var bottom_of_object = $(this).position().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-            /* If the object is completely visible in the window, fade it it */
-            if (bottom_of_window > bottom_of_object) {
+            /* If the object is completely visible in the window, fade in */
+            if (bottom_of_window +400 >= bottom_of_object) {
 
-                $(this).animate({ 'opacity': '1' }, 1500);
+                $(this).animate({ 'opacity': '1' }, 3500);
 
             }
 
@@ -35,8 +35,8 @@ const Footer = () => {
     return (
 
 
-        <div className="Footer">
-            <div className="hideme">
+        <div className="Footer hideme">
+            <div>
                 <div className="Footer-header">
                     Let's work together.
         </div>
@@ -44,6 +44,12 @@ const Footer = () => {
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt atque qui voluptatem et totam non ducimus voluptate praesentium facere ea illo veritatis unde optio rerum id, aut cupiditate cumque eaque.
     
             </div>
+                <div className = "Footer-contacts">
+                    <a href="linkedin.com/in/taylorburke">
+                        <img src="/src/pics/h-alt.jpeg" alt="linkedin"/>
+                        </a>
+
+                </div>
             </div>
 
 

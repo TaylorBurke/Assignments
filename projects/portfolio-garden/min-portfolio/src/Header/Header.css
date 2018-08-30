@@ -1,5 +1,5 @@
 .App-header {
-    min-height: 190px;
+    min-height: 320px;
     max-height: 320px;
     background-image: url("../pics/h-alt.jpeg");
     filter: grayscale(90);
@@ -10,6 +10,28 @@
     color: white;
     flex: 1;
 }
+
+.App-header a {
+    padding: 50px;
+    margin-bottom: 100px;
+    color: white;
+    z-index: 0;
+    text-align: center;
+}
+
+.App-header a:hover {
+    color: red;
+}
+
+.Fade {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    height: 16rem;
+    bottom: 0;
+    z-index: 11;
+    background-image: linear-gradient(transparent 15%, #000 85%);
+  }
 
 .App-title h1 {
     font-size: 4rem;

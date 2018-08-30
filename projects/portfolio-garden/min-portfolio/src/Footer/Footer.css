@@ -1,6 +1,6 @@
  .Footer {
-    min-height: 40vh;
-    max-height: auto;
+    min-height: 400px;
+    max-height: 600px;
     background-image: url("../pics/footer.jpg");
     filter: grayscale(90) brightness(.94);
     background-size: cover;
@@ -8,10 +8,6 @@
     z-index: 0;
     color: white;
     flex: 1;
-}
-
-.hideme {
-    opacity: 0;
 }
 
 .Footer-header {
@@ -28,6 +24,5 @@
     padding: 30px;
     margin-top: 40px;
     margin-left: 30px;
-    left: 10px;
     color: black;
 }

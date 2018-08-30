@@ -1,6 +1,19 @@
+.App-fade {
+    background-color: black;
+    /* position: fixed; */
+    min-width: 100vw;
+    min-height: 50px;
+    z-index: 2;
+}
+
+.hideme {
+    opacity: 0;
+}
+
+
 .App-intro {
     min-height: 360px;
-    max-height: 380px;
+    max-height: 470px;
     z-index: 0;
     color: black;
     flex: 1;
@@ -11,6 +24,9 @@
     filter: grayscale(90);
     background-size: cover;
     background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .Header {
@@ -22,11 +38,16 @@
 }
 
 .Header h1 {
-    padding: 20px;
+
+    max-width: 90%;
+    padding-top: 20px;
+    padding: 5px;
+    padding-left: 20px;
     font-size: 3rem;
 }
 
 .Header-paragraph {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: inline-block;
     text-align: center;
     font-size: 1.2rem;
@@ -41,8 +62,8 @@
     width: auto;
     height: auto;
     padding: 7px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     line-height: 36px;
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -58,6 +79,8 @@
     transition: 0.2s linear, color 0.1s linear;
     background: rgba(255, 255, 255, 0);
     margin: 20px;
+    margin-top: 35px;
+
 }
 
 .opacity:hover {
