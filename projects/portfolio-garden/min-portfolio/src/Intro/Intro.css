@@ -2,7 +2,8 @@
     background-color: black;
     /* position: fixed; */
     min-width: 100vw;
-    min-height: 50px;
+    min-height: auto;
+    max-height: auto;
     z-index: 2;
 }
 

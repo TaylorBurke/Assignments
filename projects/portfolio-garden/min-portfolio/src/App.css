@@ -25,9 +25,3 @@ body {
   z-index: 11;
   background-color: rgba(190, 190, 190, 0);
 }
-
-.hamburger {
-  position: fixed;
-  top: 20px;
-  right: 40px;
-}

@@ -1,6 +1,7 @@
 .Projects {
     background-color: black;
-    max-height: 700px;
+    min-height: auto;
+    max-height: auto;
     z-index: 3;
     color: white;
     flex: 1;
@@ -63,9 +64,7 @@ li:hover {
     vertical-align: top;
     width: auto;
     height: auto;
-    padding: 7px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 4px 80px;
     line-height: 36px;
     text-decoration: none;
     color: #888;

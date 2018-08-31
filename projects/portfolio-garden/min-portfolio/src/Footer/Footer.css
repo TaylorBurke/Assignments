@@ -1,28 +1,66 @@
  .Footer {
-    min-height: 400px;
-    max-height: 600px;
-    background-image: url("../pics/footer.jpg");
-    filter: grayscale(90) brightness(.94);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
-    color: white;
-    flex: 1;
-}
+     min-height: auto;
+     max-height: auto;
+     background-image: url("../pics/footer.jpg");
+     filter: grayscale(90) brightness(.94);
+     background-size: cover;
+     background-repeat: no-repeat;
+     z-index: 0;
+     color: white;
+     flex: 1;
+ }
 
-.Footer-header {
-    font-size: 4rem;
-    padding: 30px;
-    margin-top: 40px;
-    margin-left: 30px;
-    left: 10px;
-    color: black;
-}
+ .Footer-contacts {
+     margin-left: 15px;
+     margin-right: 15px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
 
-.Footer-paragraph {
-    font-size: 2.2rem;
-    padding: 30px;
-    margin-top: 40px;
-    margin-left: 30px;
-    color: black;
-}
+ @keyframes bounce {
+     0%,
+     20%,
+     60%,
+     100% {
+         -webkit-transform: translateY(0);
+         transform: translateY(0);
+     }
+     40% {
+         -webkit-transform: translateY(-20px);
+         transform: translateY(-20px);
+     }
+     80% {
+         -webkit-transform: translateY(-10px);
+         transform: translateY(-10px);
+     }
+ }
+
+ .Footer-contacts a {
+     z-index: 5;
+     margin: 10px;
+     margin-bottom: 40px;
+     padding: 7px;
+ }
+
+ .Footer-contacts a:hover {
+     animation: bounce .9s;
+ }
+
+ .Footer-header {
+     font-size: 4rem;
+     padding: 30px;
+     margin-top: 40px;
+     margin-left: 30px;
+     left: 10px;
+     color: black;
+ }
+
+ .Footer-paragraph {
+     font-size: 2.2rem;
+     padding: 30px;
+     margin-top: 40px;
+     margin-left: 30px;
+     color: black;
+ }

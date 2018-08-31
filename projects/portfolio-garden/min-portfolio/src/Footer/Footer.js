@@ -1,6 +1,10 @@
 import React from 'react';
 import './Footer.css';
-import $ from 'jquery'
+import $ from 'jquery';
+import linkedin from '../pics/linkedin.png';
+import twitter from '../pics/twitter.png';
+import github from '../pics/github.png';
+import dribbble from '../pics/dribbble.png';
 
 $(function () {  // $(document).ready shorthand
     $('.monster').fadeIn('slow');
@@ -18,7 +22,7 @@ $(document).ready(function () {
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
             /* If the object is completely visible in the window, fade in */
-            if (bottom_of_window +400 >= bottom_of_object) {
+            if (bottom_of_window + 400 >= bottom_of_object) {
 
                 $(this).animate({ 'opacity': '1' }, 3500);
 
@@ -42,12 +46,26 @@ const Footer = () => {
         </div>
                 <div className="Footer-paragraph">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt atque qui voluptatem et totam non ducimus voluptate praesentium facere ea illo veritatis unde optio rerum id, aut cupiditate cumque eaque.
-    
+
             </div>
-                <div className = "Footer-contacts">
-                    <a href="linkedin.com/in/taylorburke">
-                        <img src="/src/pics/h-alt.jpeg" alt="linkedin"/>
-                        </a>
+
+                <div className="Footer-contacts">
+                    <a href="https://linkedin.com/in/taylor-burke/" target="blank">
+                        <img src={linkedin} alt="linkedin" width="60px" />
+                    </a>
+
+                    <a href="https://twitter.com" target="blank">
+                        <img src={twitter} alt="twitter" width="60px" />
+                    </a>
+                  
+                    <a href="https://github.com/taylorburke" target="blank">
+                        <img src={github} alt="github" width="60px" />
+                    </a>
+
+                    <a href="https://dribbble.com/TaylorBurke" target="blank">
+                        <img src={dribbble} alt="dribbble" width="60px" />
+                    </a>
+                    
 
                 </div>
             </div>
