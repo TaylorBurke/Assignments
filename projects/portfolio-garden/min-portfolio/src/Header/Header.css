@@ -1,6 +1,6 @@
 .App-header {
-    min-height: 340px;
-    max-height: 340px;
+    min-height: 370px;
+    max-height: 370px;
     background-image: url("../pics/h-alt.jpeg");
     filter: grayscale(90);
     /* filter: brightness(40%); */

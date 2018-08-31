@@ -45,19 +45,23 @@ const Footer = () => {
                     Let's work together.
         </div>
                 <div className="Footer-paragraph">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt atque qui voluptatem et totam non ducimus voluptate praesentium facere ea illo veritatis unde optio rerum id, aut cupiditate cumque eaque.
+                    If you would like to hire me or just talk about collaborating, find me on these social media sites, or <span className="tooltip">email me directly.<span className="tooltiptext">hello@taylorburke.me</span></span>
 
-            </div>
+                    
+
+
+                    {/* glow will be a tool tip which displays my email */}
+                </div>
 
                 <div className="Footer-contacts">
                     <a href="https://linkedin.com/in/taylor-burke/" target="blank">
                         <img src={linkedin} alt="linkedin" width="60px" />
                     </a>
 
-                    <a href="https://twitter.com" target="blank">
+                    <a href="https://twitter.com/codeWithJS" target="blank">
                         <img src={twitter} alt="twitter" width="60px" />
                     </a>
-                  
+
                     <a href="https://github.com/taylorburke" target="blank">
                         <img src={github} alt="github" width="60px" />
                     </a>
@@ -65,7 +69,7 @@ const Footer = () => {
                     <a href="https://dribbble.com/TaylorBurke" target="blank">
                         <img src={dribbble} alt="dribbble" width="60px" />
                     </a>
-                    
+
 
                 </div>
             </div>

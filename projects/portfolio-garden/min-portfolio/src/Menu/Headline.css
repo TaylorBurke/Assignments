@@ -1,0 +1,61 @@
+.Headline {
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: auto;
+    max-height: auto;
+}
+
+.menuButton {
+    color: white;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    height: auto;
+    top: 0;
+    z-index: 11;
+    background-color: rgba(190, 190, 190, 0);
+}
+
+.menuButton img {
+    margin: 20px;
+    padding: 17px;
+    width: 30px;
+    border-radius: 55px;
+    transition-duration: 1.3s;
+}
+
+.menuButton img:hover {
+    transition-duration: 1.3s;
+    border-radius: 55px;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(87, 87, 87, 0.87);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(87, 87, 87, 0.87);
+    box-shadow: 0px 0px 30px 0px rgba(87, 87, 87, 0.87);
+}
+
+.show a {
+    color: white;
+    size: 3rem;
+    justify-content: space-around;
+    z-index: 11;
+}
+
+.show a:hover {
+    color: #999
+}
+
+.show {
+    opacity: 1
+}
+
+.hide {
+    opacity: 0
+}
+
+.menuItem {
+    color: white;
+}
+
+.menuItem:hover {
+    color: red;
+}
+

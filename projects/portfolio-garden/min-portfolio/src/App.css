@@ -14,14 +14,3 @@ body {
   flex: 1;
 }
 
-.Headline {
-  color: white;
-  min-height: 10vh;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  height: 1rem;
-  top: 0;
-  z-index: 11;
-  background-color: rgba(190, 190, 190, 0);
-}

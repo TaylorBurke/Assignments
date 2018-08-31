@@ -40,7 +40,7 @@ const Intro = () => {
         <h1>I design websites that connect people & ideas</h1>
         </div>
             <div className="Header-paragraph">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt atque qui voluptatem et totam non ducimus voluptate praesentium facere ea illo veritatis unde optio rerum id, aut cupiditate cumque eaque.
+            I love to solve interesting problems and create beautiful interfaces that enhance the human experience. I use JavaScript and React in addition to responsive CSS.
 
                 <div><a className ="opacity" href="#"> How I make Websites</a></div>
             </div>

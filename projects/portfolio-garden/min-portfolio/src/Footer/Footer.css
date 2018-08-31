@@ -48,6 +48,43 @@
      animation: bounce .9s;
  }
 
+ .tooltip {
+     color: #777;
+     position: relative;
+     
+ }
+
+ .tooltip:hover {
+    color: #333;
+    transition-duration: 1.1s;
+}
+
+ .tooltip .tooltiptext {
+     
+     visibility: hidden;
+     width: auto;
+     background-color: rgb(71, 63, 80);
+     color: #fff;
+     text-align: center;
+     position: absolute;
+     z-index: 1;
+     top: 100%;
+     left: 0%;
+     opacity: 0.1;
+     border-radius: 6px;
+     padding: 10px;
+     min-width: auto;
+     transition: opacity 0.8s;
+     transition-duration: 1.1s;
+ }
+
+
+ .tooltip:hover .tooltiptext {
+     transition-duration: 1.6s;
+     visibility: visible;
+     opacity: .6;
+ }
+
  .Footer-header {
      font-size: 4rem;
      padding: 30px;
@@ -60,7 +97,7 @@
  .Footer-paragraph {
      font-size: 2.2rem;
      padding: 30px;
-     margin-top: 40px;
+     margin: 5px;
      margin-left: 30px;
      color: black;
  }
