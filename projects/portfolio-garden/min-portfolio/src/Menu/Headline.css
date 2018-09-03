@@ -1,4 +1,5 @@
 .Headline {
+    top: 5px;
     flex-direction: row;
     justify-content: space-around;
     min-height: auto;
@@ -6,6 +7,7 @@
 }
 
 .menuButton {
+    justify-content: space-around;
     color: white;
     position: fixed;
     width: 100%;
@@ -32,30 +34,31 @@
     box-shadow: 0px 0px 30px 0px rgba(87, 87, 87, 0.87);
 }
 
-.show a {
-    color: white;
-    size: 3rem;
-    justify-content: space-around;
+.menuItem {
+    color: red;
+    font-size: 3rem;
     z-index: 11;
+    
 }
-
-.show a:hover {
-    color: #999
+.menu{
+   
+    display: flex;
+    justify-content: space-around;
 }
-
 .show {
-    opacity: 1
+    opacity: 1;
+    color: red;
 }
 
 .hide {
     opacity: 0
 }
 
-.menuItem {
-    color: white;
+a .menuItem {
+    color: red;
 }
 
-.menuItem:hover {
+a .menuItem:hover {
     color: red;
 }
 

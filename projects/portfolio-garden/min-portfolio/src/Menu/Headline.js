@@ -16,30 +16,21 @@ class Headline extends Component {
         this.toggle = this.toggle.bind(this);
     }
     toggle(event) {
-        
         this.setState(prevState => ({ isOpen: !prevState.isOpen }))
     }
 
-
     render() {
         const { isOpen } = this.state;
-
-        <Switch>
-            <Route exact path="/" component={Header} />
-            <Route path="/contact" component={Footer} />
-          </Switch>
-
         return (
-            <div className = "Headline">
-                <div className ="menuButton" onClick={this.toggle}>
-
-                    <img src={menu} alt="menu"/>
+            <div className="Headline">
+                <div className="menuButton" onClick={this.toggle}>
+                    <img src={menu} alt="menu" />
                 </div>
-                <div className ={isOpen ? 'show' : 'hide' }>
-                    
+                <div className={`menu ${isOpen ? 'show' : 'hide'}`}>
+
                     <Link to="/" className="menuItem">Home</Link>
-                    <Link to="contact" className="menuItem">Contact Me</Link>
-                    
+                    <a onClick={this.props.scrollToContact} className="menuItem">Contact Me</a>
+
                 </div>
             </div>
         );

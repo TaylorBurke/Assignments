@@ -3,16 +3,17 @@ import './Header.css';
 import Headline from '../Menu/Headline';
 
 
-const Header = () => {
+const Header = (props) => {
+    console.log(props);
     return (
         <div className="App-header">
-            <Headline />
+            <Headline scrollToContact={props.scrollToContact}/>
 
             <div className="App-title">
 
 
                 <h1>Hi! I'm Taylor Burke.
-            I make sublime websites!</h1>
+            I make sublime websites.</h1>
 
             </div>
 

@@ -30,11 +30,11 @@ $(document).ready(function () {
 
 });
 
-const Projects = () => {
+const Projects = (props) => {
 
 return(
 
-<div className="Projects hideme1">
+<div ref={props.setProjectRef}       className="Projects hideme1">
     <div className="Projects-header">Recent Projects</div>
     <ol>
 <li>
@@ -47,10 +47,15 @@ return(
     <a className="pop" href="https://floating-river-42317.herokuapp.com/" target="blank">GeoQuery<span className ="arrow">➤</span></a>
 </li>
 <li>
-    <a className="pop" href="#">Shrapnel Archery<span className ="arrow">➤</span></a>
+    <a className="pop" href="http://shrapnelarchery.com">Shrapnel Archery<span className ="arrow">➤</span></a>
+</li>
+
+<li>
+    <a className="pop" href="https://www.gaypridebowties.com/
+">Pride Bowties<span className ="arrow">➤</span></a>
 </li>
 <li>
-    <a className="pop" href="#">Vert Beauty<span className ="arrow">➤</span></a>
+    <a className="pop" href="https://www.vertbeauty.com">Vert Beauty<span className ="arrow">➤</span></a>
 </li>
 <li>
     <a className="pop" href="https://github.com/TaylorBurke/Assignments/tree/master/projects/portfolio-garden/min-portfolio" target="blank">This Portfolio<span className ="arrow">➤</span></a>

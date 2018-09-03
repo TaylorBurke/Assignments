@@ -35,11 +35,11 @@ $(document).ready(function () {
 });
 
 
-const Footer = () => {
+const Footer = (props) => {
     return (
 
 
-        <div className="Footer hideme">
+        <div ref={props.setContactRef}className="Footer hideme">
             <div>
                 <div className="Footer-header">
                     Let's work together.

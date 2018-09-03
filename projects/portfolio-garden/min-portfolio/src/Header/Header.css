@@ -11,18 +11,6 @@
     flex: 1;
 }
 
-.App-header a {
-    padding: 50px;
-    margin-bottom: 100px;
-    color: white;
-    z-index: 0;
-    text-align: center;
-}
-
-.App-header a:hover {
-    color: red;
-}
-
 .Fade {
     position: fixed;
     width: 100%;
