@@ -13,16 +13,13 @@
 }
 
 .Projects-header {
-    z-index: 0;
     color: white;
-    margin: 20px;
-    font-size: 2rem;
+    margin: 25px;
+    font-size: 2.6rem;
     text-align: center;
-    margin-top: 15px;
     position: relative;
     display: inline-block;
     vertical-align: top;
-    font-size: 2.4rem;
 }
 
 .Header-paragraph {

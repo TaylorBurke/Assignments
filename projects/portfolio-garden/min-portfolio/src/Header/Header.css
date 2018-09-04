@@ -1,30 +1,33 @@
 .App-header {
-    min-height: 370px;
-    max-height: 370px;
+    min-height: auto;
+    max-height: auto;
     background-image: url("../pics/h-alt.jpeg");
     filter: grayscale(90);
     /* filter: brightness(40%); */
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 0;
     color: white;
     flex: 1;
 }
 
 .Fade {
-    position: fixed;
+    padding-top: 1px;
     width: 100%;
     left: 0;
     height: 16rem;
     bottom: 0;
-    z-index: 11;
+    z-index: 1;
     background-image: linear-gradient(transparent 15%, #000 85%);
+    /* background-image: -webkit-linear-gradient(transparent 15%, #000 85%);
+    background-image: -moz-linear-gradient(transparent 15%, #000 85%); */
   }
 
 .App-title h1 {
+    z-index: 2;
     font-size: 4rem;
     padding: 20px;
-    margin-top: 50px;
+    margin: 50px;
+    margin-top: 10px;
     text-align: center;
 }   
 

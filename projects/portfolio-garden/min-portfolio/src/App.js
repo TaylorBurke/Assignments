@@ -10,22 +10,32 @@ class App extends Component {
   constructor(){
     super();
     this.contactRef = null;
+
     this.setContactRef = el => this.contactRef = el;
+
+    this.setProjectRef = el => this.projectRef = el;
+
+    this.projectRef = null;
+
     this.scrollToElement = this.scrollToElement.bind(this);
   }
  
   scrollToElement(el){
     const{x, y } = el.getBoundingClientRect();
-    console.log(x, y);
     window.scrollTo({top: y, left: x, behavior: "smooth"});
   }
+
+
+
   render() {
     return (
       <Router>
       <div className="App">
-          <Header scrollToContact={(e)=> this.scrollToElement(this.contactRef)}/>
+          <Header 
+          scrollToContact={(e)=> this.scrollToElement(this.contactRef)}
+          scrollToProject={(e)=> this.scrollToElement(this.projectRef)}/>
           <Intro />
-          <Projects />
+          <Projects setProjectRef = {this.setProjectRef}/>
           <Footer setContactRef = {this.setContactRef}/>
       </div>
       </Router>

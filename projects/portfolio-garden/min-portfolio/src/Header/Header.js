@@ -7,7 +7,7 @@ const Header = (props) => {
     console.log(props);
     return (
         <div className="App-header">
-            <Headline scrollToContact={props.scrollToContact}/>
+            <Headline scrollToContact={props.scrollToContact} scrollToProject={props.scrollToProject}/>
 
             <div className="App-title">
 

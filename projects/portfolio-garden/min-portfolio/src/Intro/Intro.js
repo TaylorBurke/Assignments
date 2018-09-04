@@ -37,20 +37,17 @@ const Intro = () => {
         <div className = "App-fade hideme">
         <div className="App-intro">
         <div className="Header">
-        <h1>I design websites that connect people & ideas</h1>
+        <h1>I design websites to connect people.</h1>
         </div>
             <div className="Header-paragraph">
-            I love to solve interesting problems and create beautiful interfaces that enhance the human experience. I use JavaScript and React in addition to responsive CSS.
+            I create beautiful interfaces to engage and thrill users. I've refined my methods over the years, using JavaScript and React for most of my projects.
 
-                <div><a className ="opacity" href="#"> How I make Websites</a></div>
+                <div><a className ="opacity" href="https://medium.com/@codeWithJS/how-i-make-websites-a5bff943614a" target ="blank"> How I make Websites</a></div>
             </div>
         </div>
         </div>
     )
 }
-
-
-
 
 
 export default Intro;
