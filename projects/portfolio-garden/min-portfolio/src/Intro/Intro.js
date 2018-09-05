@@ -18,9 +18,9 @@ $(document).ready(function () {
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
             /* If the object is completely visible in the window, fade in */
-            if (bottom_of_window >= bottom_of_object) {
+            if (bottom_of_window + 100 >= bottom_of_object) {
 
-                $(this).animate({ 'opacity': '1' }, 3500);
+                $(this).animate({ 'opacity': '1' }, 3200);
 
             }
 
