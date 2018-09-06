@@ -3,7 +3,6 @@
     min-height: auto;
     max-height: auto;
     z-index: 3;
-    color: white;
     flex: 1;
     font-size: 2rem;
     text-align: center;
@@ -13,7 +12,7 @@
 }
 
 .Projects-header {
-    color: white;
+    color: lavender;
     margin: 25px;
     font-size: 2.6rem;
     text-align: center;
@@ -52,7 +51,8 @@ li {
 }
 
 li:hover {
-    background-color: rgb(19, 19, 19);
+    background-color: rgba(117, 102, 255, 0.8);
+
 }
 
 .Projects a {
@@ -64,7 +64,7 @@ li:hover {
     padding: 4px 80px;
     line-height: 36px;
     text-decoration: none;
-    color: #888;
+    color: lavender;
     /* text-align: center; */
     font-size: 1.2rem;
     margin: 25px;
@@ -84,6 +84,5 @@ li:hover {
 }
 
 .pop:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0)
+    color: white;
 }

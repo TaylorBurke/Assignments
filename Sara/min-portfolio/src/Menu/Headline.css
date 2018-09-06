@@ -47,7 +47,7 @@
 }
 
 .menuItem:hover {
-    color: #999;
+    color: lavender;
     transition-duration: .7s;
     padding-top: 10px;
     padding-bottom: 5px;

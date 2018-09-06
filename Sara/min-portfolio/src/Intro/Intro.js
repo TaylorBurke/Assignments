@@ -35,15 +35,19 @@ $(document).ready(function () {
 const Intro = () => {
     return (
         <div className = "App-fade hideme">
+
         <div className="App-intro">
+        <div className="Fadetop"> </div>
         <div className="Header">
-        <h1>I design websites to connect people.</h1>
+        
+        <h1>Take the first step.</h1>
         </div>
             <div className="Header-paragraph">
-            I create beautiful interfaces to engage and thrill users. I've refined my methods over the years, using JavaScript and React for most of my projects.
+           Find the class that best fits you and click to add it to your calendar.
 
-                <div><a className ="opacity" href="https://medium.com/@codeWithJS/how-i-make-websites-a5bff943614a" target ="blank"> How I make Websites</a></div>
+                <div><a className ="opacity" href="#" target ="blank">Find a Class</a></div>
             </div>
+            <div className="Fade"> </div>
         </div>
         </div>
     )

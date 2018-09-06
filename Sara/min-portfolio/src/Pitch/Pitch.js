@@ -1,5 +1,5 @@
 import React from 'react';
-import './Intro.css';
+import './Pitch.css';
 import $ from "jquery";
 
 $(function () {  // $(document).ready shorthand
@@ -32,22 +32,25 @@ $(document).ready(function () {
 
 
 
-const Intro = () => {
+const Pitch = () => {
     return (
         <div className = "App-fade hideme">
-        <div className="App-intro">
-        <div className="Header">
-        <h1>I design websites to connect people.</h1>
-        </div>
-            <div className="Header-paragraph">
-            I create beautiful interfaces to engage and thrill users. I've refined my methods over the years, using React and for most of my front-end projects.
 
-                <div><a className ="opacity" href="https://medium.com/@codeWithJS/how-i-make-websites-a5bff943614a" target ="blank"> How I make Websites</a></div>
+        <div className="Pitch-intro">
+        <div className="Fadetop"> </div>
+        <div className="Pitch-Header">
+        
+        <h1>Now is the time.</h1>
+        </div>
+            <div className="Pitch-paragraph">
+           In this workshop you will learn lorem opsim Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aut atque hic adipisci impedit eius at aliquam obcaecati soluta itaque, in iste totam a beatae debitis distinctio nostrum dignissimos.
+
             </div>
+            <div className="Fade"> </div>
         </div>
         </div>
     )
 }
 
 
-export default Intro;
+export default Pitch;

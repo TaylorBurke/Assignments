@@ -25,7 +25,7 @@ class Headline extends Component {
                     <img src={`${isOpen ? x : menu} `} alt="menu" />
                 </div>
                 <div className={`menu ${isOpen ? 'show' : 'hide'} sticky`}>
-                    <a onClick={this.props.scrollToProject} className="menuItem">Projects</a>
+                    <a onClick={this.props.scrollToProject} className="menuItem">Classes</a>
 
                     <a onClick={this.props.scrollToContact} className="menuItem">Contact Me</a>
 

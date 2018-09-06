@@ -1,13 +1,18 @@
 .App-header {
     min-height: auto;
     max-height: auto;
-    background-image: url("../pics/h-alt.jpeg");
-    filter: grayscale(90);
+    background-image: url("../pics/h.jpeg");
+    /* filter: grayscale(90); */
     /* filter: brightness(40%); */
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     flex: 1;
+    text-shadow: 1px 1px 2px #111;
+}
+
+.big {
+    font-size: 4.2rem
 }
 
 .Fade {
@@ -24,7 +29,7 @@
 
 .App-title h1 {
     z-index: 2;
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 20px;
     margin: 50px;
     margin-top: 10px;

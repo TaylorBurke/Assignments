@@ -1,0 +1,19 @@
+.Bar {
+    background-color: black;
+    min-height: auto;
+    max-height: auto;
+    z-index: 3;
+    flex: 1;
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    font-size: 3.2rem;
+    color: lavender;
+    margin: 20px;
+}
+
+.Bar p {
+    font-size: 2rem;
+    padding: 15px;
+}

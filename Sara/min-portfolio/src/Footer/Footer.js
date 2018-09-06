@@ -40,12 +40,13 @@ const Footer = (props) => {
 
 
         <div ref={props.setContactRef}className="Footer hideme">
-            <div>
+    <div>
+                <div className="Fadetop"> </div>
                 <div className="Footer-header">
-                    Let's work together.
+                    Let's <span clasName ="big"> grow together. </span>
         </div>
                 <div className="Footer-paragraph">
-                    If you would like to hire me or just talk about collaborating, find me on these social media sites, or <span className="tooltip">email me directly.<span className="tooltiptext">hello@taylorburke.me</span></span>
+                If you would like to learn more about my classes or one on one sessions, email or call me.
 
                     
 
@@ -53,29 +54,25 @@ const Footer = (props) => {
                     {/* glow will be a tool tip which displays my email */}
                 </div>
 
-                <div className="Footer-contacts">
-                    <a href="https://linkedin.com/in/taylor-burke/" target="blank">
+         <div className="Footer-contacts">
+                    <a href="#" target="blank">
                         <img src={linkedin} alt="linkedin" width="60px" />
                     </a>
 
-                    <a href="https://twitter.com/codeWithJS" target="blank">
+                    <a href="#" target="blank">
                         <img src={twitter} alt="twitter" width="60px" />
                     </a>
 
-                    <a href="https://github.com/taylorburke" target="blank">
-                        <img src={github} alt="github" width="60px" />
-                    </a>
 
-                    <a href="https://dribbble.com/TaylorBurke" target="blank">
+                    <a href="#" target="blank">
                         <img src={dribbble} alt="dribbble" width="60px" />
                     </a>
 
 
                 </div>
             </div>
+            </div>
 
-
-        </div>
     )
 }
 

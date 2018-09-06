@@ -1,5 +1,5 @@
 import React from 'react';
-import './Projects.css';
+import './Bar.css';
 import $ from 'jquery'
 
 $(function () {  // $(document).ready shorthand
@@ -34,22 +34,9 @@ const Projects = (props) => {
 
 return(
 
-<div ref={props.setProjectRef}className="Projects hideme1">
-    <div className="Projects-header">Find a Workshop</div>
-    <ol>
-<li>
-    <a className="pop" href="#" target="blank">3 Day Breathe Intensive<span className ="arrow">➤</span></a>
-</li>
-<li>
-    <a className="pop" href="#" target="blank">Introduction to Prana<span className ="arrow">➤</span></a>
-</li>
-<li>
-    <a className="pop" href="#" target="blank">Becoming One With the Breath<span className ="arrow">➤</span></a>
-</li>
-<li>
-    <a className="pop" href="#" target="blank">Advanced Clearing Techniques<span className ="arrow">➤</span></a>
-</li>
-    </ol>
+<div className="Bar hideme1">
+    Give yourself the gift of expression.
+    <p>Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione sunt mollitia nobis laborum? Dignissimos veritatis omnis optio nesciunt explicabo, laboriosam quod eos, incidunt quam eveniet fugiat? Delectus voluptas magni suscipit. </p>
 </div>
 
 )

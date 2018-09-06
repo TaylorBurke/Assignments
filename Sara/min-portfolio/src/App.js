@@ -3,7 +3,10 @@ import './App.css';
 import Header from './Header/Header';
 import Intro from './Intro/Intro';
 import Projects from './Projects/Projects';
+import Pitch from './Pitch/Pitch';
 import Footer from './Footer/Footer';
+import Bar from './Bar/Bar';
+import Bar1 from './Bar1/Bar1';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 class App extends Component {
@@ -34,6 +37,9 @@ class App extends Component {
           <Header 
           scrollToContact={(e)=> this.scrollToElement(this.contactRef)}
           scrollToProject={(e)=> this.scrollToElement(this.projectRef)}/>
+          <Bar />
+          <Pitch />
+          <Bar1 />
           <Intro />
           <Projects setProjectRef = {this.setProjectRef}/>
           <Footer setContactRef = {this.setContactRef}/>

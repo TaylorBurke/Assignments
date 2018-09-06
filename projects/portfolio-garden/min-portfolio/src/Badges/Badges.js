@@ -1,6 +1,9 @@
 import React from 'react';
-import './Intro.css';
+import './Badges.css';
 import $ from "jquery";
+import csslogo from '../pics/css3-logo.png';
+import htmllogo from '../pics/html5-logo.png';
+import reactlogo from '../pics/icon-reactjs.svg';
 
 $(function () {  // $(document).ready shorthand
     $('.monster').fadeIn('slow');
@@ -18,7 +21,7 @@ $(document).ready(function () {
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
             /* If the object is completely visible in the window, fade in */
-            if (bottom_of_window + 100 >= bottom_of_object) {
+            if (bottom_of_window >= bottom_of_object) {
 
                 $(this).animate({ 'opacity': '1' }, 3200);
 
@@ -32,22 +35,21 @@ $(document).ready(function () {
 
 
 
-const Intro = () => {
+const Badges = () => {
     return (
-        <div className = "App-fade hideme">
-        <div className="App-intro">
-        <div className="Header">
-        <h1>I design websites to connect people.</h1>
-        </div>
-            <div className="Header-paragraph">
-            I create beautiful interfaces to engage and thrill users. I've refined my methods over the years, using React and for most of my front-end projects.
-
-                <div><a className ="opacity" href="https://medium.com/@codeWithJS/how-i-make-websites-a5bff943614a" target ="blank"> How I make Websites</a></div>
+        <div className="App-fade hideme">
+            <div className="Badges">
+             
+                <div className="badgeImage">
+                    <img src={htmllogo} alt="html" height="80px" />
+                    <img src={reactlogo} alt="react" height="80px" />
+                    <img src={csslogo} alt="css" height="80px" />
+                    
+                </div>
+              </div>
             </div>
-        </div>
-        </div>
     )
 }
 
 
-export default Intro;
+export default Badges;
