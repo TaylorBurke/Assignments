@@ -1,0 +1,16 @@
+html {
+  font-size: 62.5%;
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: black;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
