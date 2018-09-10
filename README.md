@@ -1,10 +1,10 @@
-# Assignments
-# two folders contain exercises and projects assigned by V school instructors
-# This repo represents my introduction to programming in javaScript and the MERN stack
+# Assignments:
+Two main folders (exercises and projects) contain work assigned by <a href="http://vschool.io/">V school</a> instructors.
+This repo represents my introduction to programming in JavaScript and the MERN stack. I continue to use it for personal projects, from time to time.
 
-# work done on MacBook Pro at 150 S State St (4th Floor) SLC, UT
+All work done on a MacBook Pro.
 
-some highlights:
+#Some highlights:
 
 <a href="https://github.com/TaylorBurke/Assignments/tree/master/projects/full-stack">Sleep Bank: </a>a sleep tracker CRUD application. Mobile-friendly, built with MERN stack.
 
