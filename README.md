@@ -6,7 +6,7 @@
 
 some highlights:
 
-Sleep Bank: a sleep tracker CRUD application. Mobile-friendly, built with MERN stack.
+<a href="https://github.com/TaylorBurke/Assignments/tree/master/projects/full-stack">Sleep Bank: </a>a sleep tracker CRUD application. Mobile-friendly, built with MERN stack.
 
 <a href="https://github.com/TaylorBurke/Assignments/blob/master/projects/api-redux/README.md" target="blank">GeoQuery: </a>a front end web application. Mobile friendly, built with React and Axios. Dependent on RESTful Countries API.
 
