@@ -4,7 +4,7 @@ This repo represents my introduction to programming in JavaScript and the MERN s
 
 All work done on a MacBook Pro.
 
-#Some highlights:
+<b>Some highlights:</b>
 
 <a href="https://github.com/TaylorBurke/Assignments/tree/master/projects/full-stack">Sleep Bank: </a>a sleep tracker CRUD application. Mobile-friendly, built with MERN stack.
 
