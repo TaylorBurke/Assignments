@@ -1,0 +1,48 @@
+.App-header {
+    min-height: auto;
+    max-height: auto;
+    background-image: url("../pics/cuban-party.jpg");
+    /* filter: grayscale(90); */
+    filter: brightness(110%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    flex: 1;
+}
+
+.App-title {
+    background-image: linear-gradient(0.25turn, #e66465,transparent);
+}
+
+.Fade {
+    padding-top: 1px;
+    width: 100%;
+    left: 0;
+    height: 16rem;
+    bottom: 0;
+    z-index: 1;
+    background-image: linear-gradient(transparent, white);
+    /* background-image: -webkit-linear-gradient(transparent 15%, #000 85%);
+    background-image: -moz-linear-gradient(transparent 15%, #000 85%); */
+  }
+
+.App-title h1 {
+    z-index: 2;
+    font-size: 6rem;
+    padding: 10px;
+    padding-left: 30px;
+    margin: 30px 30px 0px;
+    text-align: left;
+}   
+
+.App-title h2 {
+    z-index: 2;
+    font-size: 4rem;
+    padding: 10px;
+    padding-left: 30px;
+    margin: 30px;
+    margin-top: 0px;
+    text-align: left;
+}   
+
+
