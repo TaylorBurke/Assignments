@@ -21,19 +21,19 @@ class Headline extends Component {
         return (
             <div className="Headline">
                 <div className='menu'>
-                    <a onClick={this.props.scrollToProject} className="menuItem">Catering</a>
+
+                    <a onClick={this.props.scrollToContact} className="menuItem">Our Story</a>
+
+                    <a onClick=
+                    {this.props.scrollToProject} className="menuItem">Catering</a>
 
                     <a onClick ={this.props.scrollToContact} className="menuItem">Find Us
                     </a>
 
                     <a onClick={this.props.scrollToContact} className="menuItem">Contact Us</a>
 
-<span className = "social">
-                    <a href="https://www.facebook.com/LaCubanaslc/" target="blank"><img src={fb} alt="fb" width ="30px"/></a>
-                    </span>
-
-
-                </div>
+                    <a href="https://www.facebook.com/LaCubanaslc/" target="blank" className="menuItem"><img src={fb} alt="fb" width ="30px"/></a>
+                    </div>
             </div>
         );
     }

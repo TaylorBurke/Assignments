@@ -8,6 +8,11 @@
     background-repeat: no-repeat;
     color: white;
     flex: 1;
+    padding: 10px;
+}
+
+.App-header img{
+    margin: 1px;
 }
 
 .App-title {

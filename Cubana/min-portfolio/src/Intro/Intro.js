@@ -37,12 +37,13 @@ const Intro = () => {
         <div className = "App-fade hideme">
         <div className="App-intro">
         <div className="Header">
-        <h1>I design websites to connect people.</h1>
+        <h1>My Name is Christina</h1>
+    
         </div>
             <div className="Header-paragraph">
-            I create beautiful interfaces to engage and thrill users. I've refined my methods over the years, using JavaScript and React for most of my projects.
+            La Cubana is named after my mother, who taught me how to cook and sacrificed her life in Cuba for her kids. She's the reason there's real Cuban flavor in every Cubano we make.
 
-                <div><a className ="opacity" href="https://medium.com/@codeWithJS/how-i-make-websites-a5bff943614a" target ="blank"> How I make Websites</a></div>
+                <div><a className ="opacity" href="https://medium.com/@codeWithJS/how-i-make-websites-a5bff943614a" target ="blank"> Eat Cuban!</a></div>
             </div>
         </div>
         </div>
