@@ -1,4 +1,7 @@
-##Sleep Bank
+<b>Sleep Bank</b>
+Track Your Sleep in One Place
+
+-
 
 This was my first full stack react application.
 
