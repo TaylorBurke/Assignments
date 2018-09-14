@@ -38,6 +38,7 @@ class App extends Component {
           <Intro />
           <Projects setProjectRef = {this.setProjectRef}/>
           <Schedule />
+          <Intro />
           <Footer setContactRef = {this.setContactRef}/>
       </div>
       </Router>

@@ -1,0 +1,21 @@
+.Schedule {
+    min-height: auto;
+    max-height: auto;
+    background-image: url("../pics/street.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    color: white;
+    flex: 1;
+    flex-direction: row;
+}
+
+.App-title {
+    align-content: center;
+}
+
+.Schedule img {
+    align-items: center;
+    border: thick white solid;
+    
+}

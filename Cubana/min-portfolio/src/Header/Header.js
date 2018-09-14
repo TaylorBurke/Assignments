@@ -17,7 +17,7 @@ const Header = (props) => {
 
             </div>
 
-            <div className="Fade"> </div>
+            
         </div>
     )
 }

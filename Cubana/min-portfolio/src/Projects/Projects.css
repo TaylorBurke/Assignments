@@ -1,5 +1,5 @@
 .Projects {
-    background-color: black;
+    background-color: rgb(143, 0, 36);
     min-height: auto;
     max-height: auto;
     z-index: 3;
@@ -42,7 +42,7 @@ ol {
 }
 
 li {
-    border-top: 1px solid #282828;
+    border-top: 1px solid rgb(109, 0, 27);
     position: relative;
     transition: .3s;
     display: block;
@@ -52,7 +52,7 @@ li {
 }
 
 li:hover {
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(177, 0, 44);
 }
 
 .Projects a {
@@ -64,7 +64,7 @@ li:hover {
     padding: 4px 80px;
     line-height: 36px;
     text-decoration: none;
-    color: #888;
+    color: rgb(209, 156, 169);
     /* text-align: center; */
     font-size: 1.2rem;
     margin: 25px;

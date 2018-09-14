@@ -45,7 +45,7 @@ const Footer = (props) => {
                     Let's work together.
         </div>
                 <div className="Footer-paragraph">
-                    If you would like to hire me or just talk about collaborating, find me on these social media sites, or <span className="tooltip">email me directly.<span className="tooltiptext">hello@taylorburke.me</span></span>
+                    If you would like to hire me or just <br/> talk about your event, find me on these social media <br/> sites, or <span className="tooltip">email me directly and I'll respond in 24 hours.<span className="tooltiptext">laCubana@gmai.com</span></span>
 
                     
 
@@ -54,24 +54,14 @@ const Footer = (props) => {
                 </div>
 
                 <div className="Footer-contacts">
-                    <a href="https://linkedin.com/in/taylor-burke/" target="blank">
-                        <img src={linkedin} alt="linkedin" width="60px" />
-                    </a>
-
-                    <a href="https://twitter.com/codeWithJS" target="blank">
-                        <img src={twitter} alt="twitter" width="60px" />
-                    </a>
-
-                    <a href="https://github.com/taylorburke" target="blank">
-                        <img src={github} alt="github" width="60px" />
-                    </a>
-
-                    <a href="https://dribbble.com/TaylorBurke" target="blank">
-                        <img src={dribbble} alt="dribbble" width="60px" />
-                    </a>
-
-
+                   <div> Test
+                    </div>
+                    <div> Test
+                    </div>
+                    <div> Test
+                    </div>
                 </div>
+                <div className="Fade"> </div>
             </div>
 
 
