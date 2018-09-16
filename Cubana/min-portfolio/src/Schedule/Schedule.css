@@ -11,11 +11,12 @@
 }
 
 .App-title {
-    align-content: center;
+    justify-content: flex-end;
 }
 
 .Schedule img {
-    align-items: center;
-    border: thick white solid;
-    
+    margin: 30px;
+    margin-left: 45px;
+    border: 20px white solid;
+    justify-content: flex-end;
 }
