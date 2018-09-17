@@ -41,7 +41,7 @@ const Projects = (props) => {
                     <a className="pop" href="#" target="blank">Healthy Appetizers<span className="arrow">➤</span></a>
                 </li>
                 <li>
-                    <a className="pop" href="#" target="blank">Comofort Cubanos<span className="arrow">➤</span></a>
+                    <a className="pop" href="#" target="blank">Comfort Cubanos<span className="arrow">➤</span></a>
                 </li>
                 <li>
                     <a className="pop" href="#" target="blank">Havanah Nights<span className="arrow">➤</span></a>

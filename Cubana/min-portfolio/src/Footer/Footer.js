@@ -45,7 +45,7 @@ const Footer = (props) => {
                     Let's work together.
         </div>
                 <div className="Footer-paragraph">
-                    If you would like to hire me or just <br/> talk about your event, find me on these social media <br/> sites, or <span className="tooltip">email me directly and I'll respond in 24 hours.<span className="tooltiptext">laCubana@gmai.com</span></span>
+                    If you would like to hire me or just <br/> talk about your event, find me on these social media <br/> sites, or <span className="tooltip">email me directly and I'll respond in 24 hours.<span className="tooltiptext">laCubana@gmail.com</span></span>
 
                     
 
