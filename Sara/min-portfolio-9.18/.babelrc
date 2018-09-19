@@ -4,4 +4,3 @@
 		["@babel/preset-env", { "loose": true, "useBuiltIns": "entry" }],
 		"@babel/react"
 	]
-}
