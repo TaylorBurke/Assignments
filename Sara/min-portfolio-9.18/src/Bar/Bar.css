@@ -11,9 +11,14 @@
     font-size: 3.2rem;
     color: lavender;
     margin: 20px;
+    padding: 15px;
+    margin: 10px;
+    margin-left: 55px;
+    margin-right: 55px;
 }
 
 .Bar p {
     font-size: 2rem;
     padding: 15px;
+
 }

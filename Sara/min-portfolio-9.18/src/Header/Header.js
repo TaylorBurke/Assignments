@@ -1,6 +1,8 @@
 import React from 'react';
 import './Header.css';
 import Headline from '../Menu/Headline';
+import lotus from '../pics/lotus.png';
+import arrow from '../pics/down-arrow.png'
 
 
 const Header = (props) => {
@@ -12,10 +14,11 @@ const Header = (props) => {
             <div className="App-title">
 
 
-                <h1>Be the confident, playful artist you are.<div className= "big"> Find your creative power.</div>  </h1>
+                <h1><div className= "big"><img src={lotus} alt="lotus"/><br/>Unlock Your Potential</div></h1>
            
 
             </div>
+            <div className="Footer-contacts"><a href="#"><img src={arrow} alt="arrow" width="60px"/></a></div>
 
             <div className="Fade"> </div>
         </div>

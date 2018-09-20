@@ -8,7 +8,8 @@ function addUp(num) {
 
     for (i = 0; i < num; i++) {
 
-        counter += (i +1)
+        counter += (i +1);
+        console.log(counter)
 
     }
 

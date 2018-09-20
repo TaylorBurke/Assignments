@@ -5,16 +5,24 @@
 // note; this includes the first instance, so it looks like:
 // (5 * 5 * 5 * 5 * 5)
 
-exponent = 5;
-number = 5;
+let exponent = 10;
+let number = 10;
 
-const scientificNotation = ( num, exp ) => {
-    let answer = 0;
-
-
-    return answer
+const scientificNotation = (x,y) => {
+    let counter = 0
+   for(i = 0; i < y-1; i++){
+     if(counter == 0){
+        counter += x * x
+     }
+     else{
+       counter *= x
+     }
+   }
+    return counter
 }
 
+// the cheaty way
+//return Math.pow(num, exp)
 
 
-console.log(scientificNotation( number, exponent ));
+console.log(scientificNotation(number, exponent));

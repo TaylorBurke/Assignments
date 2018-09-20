@@ -12,6 +12,7 @@
 
 
 .Pitch-intro {
+    padding-top: 60px;
     min-height: auto;
     max-height: auto;
     z-index: 0;
@@ -33,24 +34,20 @@
 .Pitch-header {
     color: white;
     margin: 35px;
-    margin-top: 55px;
     margin-bottom: 10px;
     font-style: italic;
-    position: relative;
     display: inline-block;
     vertical-align: top;
 }
 
 .Pitch-header h1 {
     position: relative;
-    padding: 10px;
+    padding: 50px;
     margin: 10px;
     font-size: 3.5rem;
-    color: white;
 }
 
 .Pitch-paragraph {
-    color: whitesmoke;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: inline-block;
     text-align: center;

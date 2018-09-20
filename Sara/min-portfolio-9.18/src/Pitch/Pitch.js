@@ -37,14 +37,13 @@ const Pitch = () => {
         <div className = "App-fade hideme">
 
         <div className="Pitch-intro">
-        <div className="Fadetop"> </div>
+        {/* <div className="Fadetop"> </div> */}
         <div className="Pitch-Header">
         
-        <h1>Now is the time.</h1>
+        <h1>If not now, then when?</h1>
         </div>
             <div className="Pitch-paragraph">
-           In this workshop you will learn lorem opsim Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aut atque hic adipisci impedit eius at aliquam obcaecati soluta itaque, in iste totam a beatae debitis distinctio nostrum dignissimos.
-
+           You are invited to come experience this simple approach with me. I will help you to enhance your actions in the direction of life affirming habits and beliefs.
             </div>
             <div className="Fade"> </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Bar.css';
 import $ from 'jquery'
+import key from '../pics/key.png';
 
 $(function () {  // $(document).ready shorthand
     $('.monster').fadeIn('slow');
@@ -35,8 +36,12 @@ const Projects = (props) => {
 return(
 
 <div className="Bar hideme1">
-    Give yourself the gift of expression.
-    <p>Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione sunt mollitia nobis laborum? Dignissimos veritatis omnis optio nesciunt explicabo, laboriosam quod eos, incidunt quam eveniet fugiat? Delectus voluptas magni suscipit. </p>
+
+The future belongs to those who believe in the power of their dreams
+
+    <p>How would your life be different if you were living up to your true potential? If you can imagine a better life for yourself than you must also capable of making that life a reality. Does it have to be hard? What if you already have the key?</p>
+
+    <img src={key} alt="key"/>
 </div>
 
 )
