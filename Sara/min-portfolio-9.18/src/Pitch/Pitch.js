@@ -45,7 +45,7 @@ const Pitch = () => {
             <div className="Pitch-paragraph">
            You are invited to come experience this simple approach with me. I will help you to enhance your actions in the direction of life affirming habits and beliefs.
             </div>
-            <div className="Fade"> </div>
+            {/* <div className="Fade"> </div> */}
         </div>
         </div>
     )

@@ -5,8 +5,8 @@
 // note; this includes the first instance, so it looks like:
 // (5 * 5 * 5 * 5 * 5)
 
-let exponent = 10;
-let number = 10;
+let exponent = 3;
+let number = 3;
 
 const scientificNotation = (x,y) => {
     let counter = 0

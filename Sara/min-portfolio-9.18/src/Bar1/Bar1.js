@@ -35,8 +35,8 @@ const Projects = (props) => {
 return(
 
 <div className="Bar hideme1">
-    Transform your latent energy into fruitful passion.
-    <p>Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione sunt mollitia nobis laborum? Dignissimos veritatis omnis optio nesciunt explicabo, laboriosam quod eos, incidunt quam eveniet fugiat? Delectus voluptas magni suscipit. </p>
+    You are a painter and your life is the canvas.
+    <p>Everything is creation. Each breath you take, each move you make, is part of the dance you play out with the world.</p>
 </div>
 
 )
