@@ -1,0 +1,12 @@
+{
+  "name": "edabit",
+  "version": "1.0.0",
+  "description": "This is a folder where I work out edabit problems. I like to be able to console log and run node on the functions.",
+  "main": "add-up.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
