@@ -12,3 +12,7 @@ const isPalindrome = (str) => {
 }
 
 console.log(isPalindrome(n))
+
+const flip = (str) => {
+
+}
