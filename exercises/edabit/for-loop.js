@@ -1,8 +1,8 @@
 // this is a fun application to see what is possible with for loops
 
 
-let y = "rur";
-let n = "floof";
+let y = "212";
+let n = 23;
 
 const isPalindrome = (str) => {
     for (let i = 0; i < str.length / 2; i++) {
@@ -11,8 +11,6 @@ const isPalindrome = (str) => {
     return true;
 }
 
-console.log(isPalindrome(n))
+console.log(isPalindrome(n));
 
-const flip = (str) => {
-
-}
+console.log(isPalindrome(y));
