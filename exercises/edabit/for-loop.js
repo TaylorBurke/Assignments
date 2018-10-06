@@ -15,12 +15,3 @@ const isPalindrome = (str) => {
 
 // console.log(isPalindrome(y));
 
-// https://edabit.com/challenge/b2NdDSdkjqFnCTfS8
-x = ['red', 'blue', 1, 2];
-
-function filterArray(arr) {
-	const result = arr.filter(arr => arr(typeof Number));
-    return result
-}
-
-filterArray(x);
