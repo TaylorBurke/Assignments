@@ -11,6 +11,16 @@ const isPalindrome = (str) => {
     return true;
 }
 
-console.log(isPalindrome(n));
+// console.log(isPalindrome(n));
 
-console.log(isPalindrome(y));
+// console.log(isPalindrome(y));
+
+// https://edabit.com/challenge/b2NdDSdkjqFnCTfS8
+x = ['red', 'blue', 1, 2];
+
+function filterArray(arr) {
+	const result = arr.filter(arr => arr(typeof Number));
+    return result
+}
+
+filterArray(x);
