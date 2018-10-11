@@ -6,7 +6,14 @@ let array = [1, -2, 3, 4];
 
 
 function getAbsSum(arr) {
-    var filterArray = arr.reduce(reducer);
+
+    let newArr = [];
+
+    for (let i = 0; i < arr.length; i++){
+        newArr.push(Math.abs(arr[i]))
+    }
+
+    var filterArray = newArr.reduce(reducer);
 
     return filterArray
 }
@@ -15,7 +22,7 @@ function getAbsSum(arr) {
 const array1 = [1, -2, 3, 4];
 
 
-const reducer = (accumulator, currentValue) => {return (Math.abs(accumulator) + currentValue)}
+const reducer = (accumulator, currentValue) => (accumulator) + currentValue
 
 
 
