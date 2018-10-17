@@ -1,11 +1,8 @@
-let num = 8;
+// https://edabit.com/challenge/Y8vbWzFb2GcyQ3hMm
 
-function helpDecimal(x, y) {
-    return Number.parseFloat(x).toFixed(y);
-  }
 
-const piTo = (num) => {
-   return Math.PI
+function myPi(n) {
+	
+    return Number(parseFloat(Math.PI).toFixed(n));
+
 }
-
-console.log(helpDecimal(piTo, num));
