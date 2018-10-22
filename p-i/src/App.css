@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -21,6 +22,27 @@
 .App-link {
   color: #61dafb;
 }
+
+.rawr {
+  width: 100%;
+  height: 500px;
+  background-color: blue;
+}
+
+.rawr1 {
+  width: 80%;
+  height: 200px;
+  border: solid thick blue;
+  color: orange;
+}
+
+.rawr2 {
+  width: 80%;
+  height: 100px;
+  background-color: orange;
+}
+
+
 
 @keyframes App-logo-spin {
   from {
