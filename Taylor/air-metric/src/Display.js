@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import InputForm from './InputForm';
-import { addToFavorites } from './redux'
+import { addToFavorites } from './redux';
+// import { balloon } from './hot-air-balloon.png'
 // import { store } from 'react-redux'
 
 
@@ -14,7 +15,7 @@ const Display = (props) => {
       <h2>Check air quality using AirMetric</h2>
 
       <InputForm />
-      <h3>{props.country ? props.country.name : "Total World Population: 7.6B"}</h3>
+      <h3>{props.country ? props.country.name : "What are you breathing?"}</h3>
 
       <h4>{props.country ? "Local Name: " : ""}{props.country ? props.country.nativeName : ""}</h4>
 
