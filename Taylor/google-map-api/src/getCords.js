@@ -6,14 +6,10 @@
 // async makes the function automatically return a promise
 
 
-import Input from './Input';
-
-
-
 async function getCoordinates(address){
     const geoCodeResponse = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=AIzaSyAIXfsEKJ-Z-wo2QOI9l8-zBdKbHWpwVrc`)
     
-    if (geoCodeResponse.status != 200) {
+    if (Math.floor(geoCodeResponse.status/100) !== 2) {
         throw new Error(`invalid status code ${geoCodeResponse.status}`) 
     }
     const result = (await geoCodeResponse.json()).results[0]
