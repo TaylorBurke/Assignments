@@ -25,6 +25,6 @@ async function getCoordinates(address){
     return {lat, lng}
 }
 
-console.log(getCoordinates('362 W Concord Pl Saratoga Springs UT'));
+// console.log(getCoordinates('362 W Concord Pl Saratoga Springs UT'));
 
 export default getCoordinates;

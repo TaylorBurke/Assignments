@@ -11,7 +11,7 @@ const Nav = () => {
                 href="https://breezometer.com/air-quality-api/" target="blank">API</a>
 
                 <a 
-                href="https://www.taylorburke.me" target="blank">Source Code</a>
+                href="https://github.com/TaylorBurke/Assignments/blob/master/Taylor/air-quality-app/README.md" target="blank">Source Code</a>
 
             </div>
 
