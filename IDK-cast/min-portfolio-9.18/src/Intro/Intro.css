@@ -1,0 +1,100 @@
+.App-fade {
+    background-color: black;
+    min-width: 100vw;
+    min-height: auto;
+    max-height: auto;
+    z-index: 2;
+}
+
+.hideme {
+    opacity: 0;
+}
+
+.App-intro {
+    min-height: auto;
+    max-height: auto;
+    z-index: 0;
+    flex: 1;
+    font-size: 2rem;
+    text-align: center;
+    flex: 1;
+    background-image: url("../pics/jo.jpg");
+    /* filter: grayscale(90); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 2px #111;
+}
+
+.Header {
+    color: white;
+    margin: 35px;
+    margin-top: 55px;
+    margin-bottom: 10px;
+    font-style: italic;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.Header h1 {
+    padding: 10px;
+    margin: 10px;
+    font-size: 3.5rem;
+}
+
+.Header-paragraph {
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 70vw;
+    padding: 80px 45px;
+}
+
+.App-intro a {
+    width: 90%;
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    height: auto;
+    padding: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 36px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: none;
+}
+
+.App-intro a:visited {
+    color: lavender
+}
+
+.opacity {
+    overflow: hidden;
+    background: rgb(105, 88, 255, 0.95);
+    transition: 0.2s linear, color 0.1s linear;
+    margin: 30px;
+    margin-top: 45px;
+}
+
+.opacity:hover {
+    color: #fff;
+    background: rgba(117, 102, 255, 0.8);
+}
+
+.Fadetop {
+    padding-top: 1px;
+    width: 100%;
+    left: 0;
+    height: 16rem;
+    top: 0;
+    background-image: linear-gradient(#000 15%, transparent 85%);
+}

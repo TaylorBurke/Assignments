@@ -1,0 +1,64 @@
+.App-header {
+    min-height: auto;
+    max-height: auto;
+    background-image: url("../pics/bruna.jpg");
+    /* filter: grayscale(90); */
+    /* filter: brightness(40%); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    flex: 1;
+    text-shadow: 1px 1px 2px #111;
+}
+
+
+.Fade {
+    padding-top: 1px;
+    width: 100%;
+    left: 0;
+    height: 16rem;
+    bottom: 0;
+    z-index: 1;
+    background-image: linear-gradient(transparent 15%, #000 85%);
+    /* background-image: -webkit-linear-gradient(transparent 15%, #000 85%);
+    background-image: -moz-linear-gradient(transparent 15%, #000 85%); */
+}
+
+.App-title h1 {
+    z-index: 2;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.big {
+    font-size: 4.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1px;
+    margin-bottom: -20px;
+}
+
+
+.App-title h2 {
+    z-index: 2;
+    font-size: 2.5rem;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.Testimonials {
+    background-color: #00000026;
+    border-radius: 20px;
+    color: white;
+    max-width: 50vw;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 28px;
+    box-shadow: 0 0 20px #00000026;
+    text-shadow: 0 0 6px #00000073;
+
+}
+
