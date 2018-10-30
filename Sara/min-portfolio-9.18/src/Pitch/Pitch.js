@@ -40,10 +40,15 @@ const Pitch = () => {
         {/* <div className="Fadetop"> </div> */}
         <div className="Pitch-Header">
         
-        <h1>If not now, then when?</h1>
-        </div>
+        
+        <h3>Have you wanted to express yourself creatively but didn't know where to start?</h3>
+
+        <h2>What would it look like to unlock your creative potential?</h2>
             <div className="Pitch-paragraph">
            You are invited to come experience this simple approach with me. I will help you to enhance your actions in the direction of life affirming habits and beliefs.
+            </div>
+            <h1>If not now, then when?</h1>
+
             </div>
             {/* <div className="Fade"> </div> */}
         </div>

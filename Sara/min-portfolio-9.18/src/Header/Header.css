@@ -8,11 +8,11 @@
     background-repeat: no-repeat;
     color: white;
     flex: 1;
-    text-shadow: 1px 1px 2px #111;
+    text-shadow: 0px 0px 40px #111;
 }
 
 .big {
-    font-size: 4.2rem
+    font-size: 4.9rem
 }
 
 .Fade {

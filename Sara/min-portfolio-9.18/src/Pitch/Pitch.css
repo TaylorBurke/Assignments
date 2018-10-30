@@ -10,6 +10,18 @@
     opacity: 0;
 }
 
+.Pitch-intro h1 {
+    font-size: 4.2rem
+}
+
+.Pitch-intro h2 {
+    font-size: 3.5rem
+}
+
+.Pitch-intro h3 {
+    font-size: 3rem
+}
+
 
 .Pitch-intro {
     padding-top: 60px;
@@ -40,11 +52,21 @@
     vertical-align: top;
 }
 
-.Pitch-header h1 {
+.Pitch-Header {
     position: relative;
     padding: 50px;
     margin: 10px;
     font-size: 3.5rem;
+    background-color: #00000062;
+    border-radius: 20px;
+    color: white;
+    max-width: 50vw;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 28px;
+    box-shadow: 0 0 20px #00000026;
+    text-shadow: 0 0 6px #00000073;
 }
 
 .Pitch-paragraph {
@@ -90,5 +112,5 @@
     left: 0;
     height: 16rem;
     top: 0;
-    background-image: linear-gradient( #000 15%, transparent 85%);
+    background-image: linear-gradient(#000 15%, transparent 85%);
 }

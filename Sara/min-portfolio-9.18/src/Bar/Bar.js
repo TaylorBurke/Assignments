@@ -37,9 +37,9 @@ return(
 
 <div className="Bar hideme1">
 
-The future belongs to those who believe in the power of their dreams
-
-    <p>How would your life be different if you were living up to your true potential? If you can imagine a better life for yourself, than you must also capable of making that life a reality. Maybe it doesn't have to be hard... What if you already have the key?</p>
+<h1>The future belongs to those who believe in the power of their dreams
+</h1>
+    <p>How would your life be different if you were living up to your true potential? Imagining a better life is the first step towards making that life a reality. Maybe it doesn't have to be hard... What if you already have the key?</p>
 
     <img src={key} alt="key"/>
 </div>
