@@ -1,9 +1,7 @@
 import React from 'react';
 import './Badges.css';
 import $ from "jquery";
-import csslogo from '../pics/css3-logo.png';
-import htmllogo from '../pics/html5-logo.png';
-import reactlogo from '../pics/icon-reactjs.svg';
+import star from '../pics/star-icon.png';
 
 $(function () {  // $(document).ready shorthand
     $('.monster').fadeIn('slow');
@@ -41,9 +39,9 @@ const Badges = () => {
             <div className="Badges">
              
                 <div className="badgeImage">
-                    <img src={htmllogo} alt="html" height="80px" />
-                    <img src={reactlogo} alt="react" height="80px" />
-                    <img src={csslogo} alt="css" height="80px" />
+                
+                    <img src={star} alt="ribbon" height="40px" />
+             
                     
                 </div>
               </div>
