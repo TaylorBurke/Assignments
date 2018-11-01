@@ -37,10 +37,10 @@ const Intro = () => {
         <div className = "App-fade hideme">
         <div className="App-intro">
         <div className="Header">
-        <h1>I design websites to connect people.</h1>
+        <h1>Websites connect people.</h1>
         </div>
             <div className="Header-paragraph">
-            I create beautiful interfaces to engage and thrill users. I've refined my methods over the years, using React and for most of my front-end projects.
+            Beautiful interfaces engage and thrill users. Over the years, my clients have seen amazing results from their personal and business sites.
 
                 <div><a className ="opacity" href="https://medium.com/@codeWithJS/how-i-make-websites-a5bff943614a" target ="blank"> How I make Websites</a></div>
             </div>
