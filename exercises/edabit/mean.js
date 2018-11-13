@@ -16,7 +16,7 @@ const mean = (arr) => {
 
     let sum = arr.reduce(reducer);
     let answer = sum / arr.length;
-    let decAnswer = parseFloat(answer);
+    let decAnswer = Math.round(answer * 1e2 ) / 1e2;
     return decAnswer
 }
 
