@@ -44,6 +44,11 @@ TesterArr = [
     
     ]
 
+    // how would you retrieve the object by id?
+
 for (i = 0; i < TesterArr.length; i ++) {
 console.log(`array object names: ${TesterArr[i].Name}`)
+
+if (TesterArr[i].Id = 73453)
+    console.log(`your object by Id is: ${TesterArr[i]}`)
 }
