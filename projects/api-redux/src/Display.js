@@ -32,8 +32,6 @@ const Display = (props) => {
 
       <h4>{props.country ? <button onClick={() => props.addToFavorites(props.country)} className="favButton">Favorite</button> : ""}</h4>
 
-
-
     </div>
   )
 }
