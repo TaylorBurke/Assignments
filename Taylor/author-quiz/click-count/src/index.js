@@ -21,7 +21,7 @@ const state = {
 };
 
 function render(){
-ReactDOM.render(<AuthorQuiz {...state}/>, document.getElementById('root'));
+ReactDOM.render(<AuthorQuiz { ...state }/>, document.getElementById('root'));
 }
 
 render();
