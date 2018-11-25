@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className = "footer">
 
-           <a href="https://github.com/TaylorBurke/Assignments/tree/master/projects/api-redux" target="blank">Source Code</a>
+           <a href="https://github.com/TaylorBurke/Assignments/tree/master/Taylor/refactorQeoQuest" target="blank">Source Code</a>
 
            <a href="https://restcountries.eu/" target="blank">API</a>
 

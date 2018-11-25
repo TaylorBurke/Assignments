@@ -4,6 +4,4 @@ I use Axios requests/promises for RESTful Countries API. Front end mobile respon
 
 Redux was used for state management, primarily because I wanted to practice getting things set up with Redux, and I wanted a boilerplate for future use.
 
-<b>See the deployement <a href="https://floating-river-42317.herokuapp.com/"> here. <a/> </b>
-
-Note, the favorites feature is not complete :(
+<b>See the deployement <a href="https://geoquery.surge.sh/"> here. <a/> </b>
