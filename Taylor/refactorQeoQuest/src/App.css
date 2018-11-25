@@ -1,0 +1,181 @@
+* {
+  margin: 0px
+}
+
+body {
+  background-image: linear-gradient(#878472, #D6D6B1);
+  font-family: 'Roboto', sans-serif;
+}
+
+input {
+  padding: 11px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 11px #3F3F37;
+  transition-duration: 110ms;
+  margin: 10px;
+  border: 1px solid #3F3F37;
+}
+/* 
+ isn't it funny that we never use comments for documentation, 
+ but we always use it 
+ to hoard
+
+  input:hover {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  box-shadow: 0px 4px 5px #3F3F37;
+} */
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 80px;
+  min-height: 100vh;
+}
+
+.display img {
+  box-shadow: 0px 3px 12px 0px #3F3F37;
+  margin-bottom: 10px
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+
+.searchButton {
+  display: flex;
+  justify-content: space-around;
+}
+
+.favButton {
+ align-self: center;
+}
+
+button {
+  padding: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+  background: #DE541E;
+  box-shadow: 0px 4px 6px 0px #3F3F37;
+  transition-duration: 120ms;
+  border: none;
+  margin: 10px
+}
+
+button:hover {
+  margin-top: 13px;
+  margin-bottom: 7px;
+  box-shadow: 0px 1px 0px 0px #3F3F37;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: wheat;
+  background-image: linear-gradient(#494331, #3F3F37);
+  padding: 10px;
+}
+
+.nav a {
+  color: wheat;
+  text-decoration: none;
+  padding: 4px;
+  padding-top: 6px;
+  padding-bottom: 7px;
+  
+}
+
+.nav a:hover {
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: aliceblue;
+  background-color: darkblue;
+  padding: 3px;
+  padding-bottom: 8px;
+  color: aliceblue;
+  background-image:linear-gradient(#494331, #3F3F37);
+  margin-top: 35px;
+}
+
+.footer a {
+  color: wheat;
+  text-decoration: none;
+  padding: 9px;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/* .wrapper {
+  display: flex;
+  justify-content: space-around;
+} */
+
+img {
+  display: flex;
+  justify-content: space-around;
+  align-items: middle;
+  width: 300px;
+}
+
+p {
+  padding: 35px;
+}
+
+.favorites {
+  padding: 30px
+}
+
+h2 {
+  display: flex;
+  padding: 16px;
+  padding-top: 38px;
+  font-size: 2rem;
+  color: #3F3F37;
+  align-items: center;
+  justify-content: space-around;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+h3 {
+  padding: 5px;
+  font-size: 1.5rem;
+  color: #3F3F37;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+h4 {
+  padding: 4px;
+  font-size: 1.2rem;
+  color: #3F3F37;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
