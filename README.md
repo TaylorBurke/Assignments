@@ -8,4 +8,6 @@ This repo represents my introduction to programming in JavaScript and the MERN s
 
 <a href="https://github.com/TaylorBurke/Assignments/tree/master/projects/api-redux" target="blank">GeoQuery: </a>a front end web application. Mobile friendly, built with React and Axios. Dependent on RESTful Countries API.
 
-[Air Quality App:](https://github.com/TaylorBurke/Assignments/tree/master/Taylor/air-quality-app) front end web application using geoCoding and breezoMeter APIs to return air quality data about a user inputted location.
+<a href="https://github.com/TaylorBurke/Assignments/tree/master/Taylor/refactorQeoQuest">GeoQuery2.0: </a>refactor of the original, polished the feel to add a material design language.
+
+[Air Quality App:](https://github.com/TaylorBurke/Assignments/tree/master/Taylor/air-quality-app) front end web application using geoCoding and breezoMeter APIs to return air quality data about a user inputted location. 
