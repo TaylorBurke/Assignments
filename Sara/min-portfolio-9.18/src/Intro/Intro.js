@@ -34,21 +34,21 @@ $(document).ready(function () {
 
 const Intro = () => {
     return (
-        <div className = "App-fade hideme">
+        <div className="App-fade hideme">
 
-        <div className="App-intro">
-        <div className="Fadetop"> </div>
-        <div className="Header">
-        
-        <h1>Take the first step.</h1>
-        </div>
-            <div className="Header-paragraph">
-           Find the class that best fits you and click to add it to your calendar.
+            <div className="App-intro">
+                <div className="Fadetop"> </div>
+                <div className="Pitch-Header">
 
-                <div><a className ="opacity" href="#" target ="blank">Find a Class</a></div>
+                    <h3>Class Schedule</h3>
+                
+                <div className="Header-paragraph">
+                    Saturday December 8th, 11AM: Healing Breath (Beginners Welcomed)
+                <div><a className="opacity" href="#" target="blank">RSVP</a></div>
+                </div>
+                </div>
+                <div className="Fade" />
             </div>
-            <div className="Fade"> </div>
-        </div>
         </div>
     )
 }

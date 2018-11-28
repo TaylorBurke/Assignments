@@ -50,7 +50,7 @@ const Pitch = () => {
             <h1>If not now, then when?</h1>
 
             </div>
-            {/* <div className="Fade"> </div> */}
+            <div className="Fade" />
         </div>
         </div>
     )
