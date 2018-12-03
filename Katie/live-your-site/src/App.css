@@ -8,7 +8,8 @@
 }
 
 .App-header {
-  background-image: url(./pics/compass.jpeg);
+  background-image: linear-gradient(#DD5E98, #CC4BC2);
+  /* background-image: url(./pics/compass.jpeg); */
   background-size: cover;
   min-height: 100vh;
   display: flex;
