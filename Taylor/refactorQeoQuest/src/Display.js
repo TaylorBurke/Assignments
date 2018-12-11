@@ -1,15 +1,19 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import InputForm from './InputForm';
-import { addToFavorites } from './redux'
+import { addToFavorites } from './redux';
+import ErrorBoundary from './ErrorBoundary';
 // import { store } from 'react-redux'
+
+
+// can we utilize more apis like wikipedia? something???? lets put it down there
 
 
 
 
 const Display = (props) => {
   return (
-
+    <ErrorBoundary>
     <div className="display">
       <h2>Welcome to GeoQuery!</h2>
 
@@ -35,6 +39,7 @@ const Display = (props) => {
 
 
     </div>
+    </ErrorBoundary>
   )
 }
 

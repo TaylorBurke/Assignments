@@ -35,6 +35,16 @@ input {
   min-height: 100vh;
 }
 
+
+.favorites {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 80px;
+  min-height: 90vh;
+}
+
 .display img {
   box-shadow: 0px 3px 12px 0px #3F3F37;
   margin-bottom: 10px

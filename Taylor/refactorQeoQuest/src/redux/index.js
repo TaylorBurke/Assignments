@@ -11,7 +11,7 @@ let variable = "var";
 const initialState = {
     country: null,
     loading: false,
-    favorites: []
+    favorites: '',
 }
 
 const reducer = (prevState = initialState, action) => {
@@ -32,7 +32,7 @@ const reducer = (prevState = initialState, action) => {
         case "ADD_TO_FAVORITES":
             return {
                 ...prevState,
-                favorites: ['Turkey', 'Greece', 'Romania', 'Hungary', 'France', 'Germany', 'Italy', 'Peru', `string ${variable}`]
+                favorites: this.state.country.name,
             }
         default:
             return prevState;
@@ -43,21 +43,15 @@ const reducer = (prevState = initialState, action) => {
 export const addToFavorites = (country) => {
     return dispatch => {
         //is this thunk?
-        dispatch({type: "ADD_TO_FAVORITES"});
-        axios.get(`https://restcountries.eu/rest/v2/name/${country}`)
-            .then(response => {
-                dispatch({
-                    type: 'ADD_TO_FAVORITES',
-                    favorites: response.data[0]
-                })
-            })
+        dispatch({ type: "ADD_TO_FAVORITES" });
+
     }
 }
 
 export const getCountry = (country) => {
     return dispatch => {
         //DO THE PROMISE STUFF
-        dispatch({type: "GET_COUNTRY"});
+        dispatch({ type: "GET_COUNTRY" });
         axios.get(`https://restcountries.eu/rest/v2/name/${country}`)
             .then(response => {
                 dispatch({

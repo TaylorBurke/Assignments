@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Display from './Display';
+import Favorites from './Favorites';
 // import Favorites from './Favorites';
 import { Route, Switch } from 'react-router-dom'
 import Nav from './Nav';
@@ -18,7 +19,7 @@ import Information from './Information'
 
 class App extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
       targets: []
     }
@@ -33,7 +34,7 @@ class App extends Component {
         
         <Switch>
           <Route exact path="/" component={Display} />
-          {/* <Route path="/favorites" component={Favorites} /> */}
+          <Route path="/favorites" component={Favorites} />
           <Route path="/information" component={Information} />
         </Switch>
         <Footer />

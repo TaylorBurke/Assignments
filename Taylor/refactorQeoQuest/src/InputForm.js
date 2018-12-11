@@ -5,7 +5,7 @@ import { getCountry } from './redux'
 
 class InputForm extends Component {
     constructor() {
-        super()
+        super();
         this.state = {
             country: ''
         }
