@@ -26,7 +26,11 @@ const rockPaperScissors = (move) => {
     else if (playerMove === 3 && computerMove === 1){
         return("You cover the computer's rock with your paper!")
     }
-    else return("You both threw the same move, it's a draw!")
+    else return(`You both threw ${move}, it's a draw!`)
     };
 
-console.log(rockPaperScissors("scissors"));
+console.log(`first round: ${rockPaperScissors("scissors")}`);
+
+console.log(`second round: ${rockPaperScissors("rock")}`);
+
+console.log(`third round: ${rockPaperScissors("paper")}`);
