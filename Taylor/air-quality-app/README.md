@@ -1,3 +1,5 @@
+# FYI - this app is depracated due to the BreezoMeter API requiring a monthly $ubscription. The [demo video](https://youtu.be/GMrvlSq2yMc) is all I have to show at this time.
+
 ## [AQI Web App](http://aqi-app.surge.sh/)
 
 ## Special Thanks
