@@ -1,13 +1,13 @@
+
 function factorial(int) {
-    let array = [];
-	for (i = 0; i <= int; i++){
-        array.push(i)
+    if (int < 0) 
+          return -1;
+    else if (int == 0) 
+        return 1;
+    else {
+        return (int * factorial(int - 1));
     }
+  }
 
-    const reducer = (acc, cv) => acc + cv;
 
-    return array.reduce(reducer);
-
-};
-
-console.log(factorial(5))
+console.log(factorial(3));
