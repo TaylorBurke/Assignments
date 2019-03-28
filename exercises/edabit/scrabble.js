@@ -7,15 +7,9 @@ const tileHand = [
   { tile: "A", score: 1 },
   { tile: "E", score: 3 }
 ];
-
+// that's how you use a reducer!
 function maximumScore(tileHand) {
-    const ary=[];
-    for (let i = 0; i<tileHand.length;i++){
-
-        console.log(Object.keys(tileHand));
-
-    }
-
+	return tileHand.reduce((p,c) => p + c.score, 0);
 }
 
 console.log(maximumScore(tileHand));
