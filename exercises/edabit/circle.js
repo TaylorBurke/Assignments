@@ -1,24 +1,30 @@
 class Rectangle {
-    constructor(sideA,sideB){
-      this.sideA = sideA;
-      this.sideB = sideB;
+    constructor(sideA, sideB) {
+        this.sideA = sideA;
+        this.sideB = sideB;
     }
-      
-    getArea(){return this.sideA*this.sideB};
-    getPerimeter(){return (this.sideA + this.sideB) *2 };
-  }
-  
-  // (PIr^2) <= getArea getPerimeter =>(2PI*r)
-  
-  class Circle {
-      constructor(rad){
-          this.rad = rad;
-      }
-      
-          getPerimeter(){}
-          getArea(){}
-  }
-  
-  let q = new Circle(4.44);
-  console.log(q.getArea());
-  console.log(q.getPerimeter());
+
+    getArea() { return this.sideA * this.sideB };
+    getPerimeter() { return (this.sideA + this.sideB) * 2 };
+}
+
+class Circle {
+
+    constructor(rad) {
+        this.rad = rad;
+    }
+
+    getArea() {
+        let answer = (this.rad * this.rad) * (Math.PI);
+        return answer;
+    }
+
+    getPerimeter() {
+        return this.rad * (Math.PI * 2);
+    }
+
+}
+
+let q = new Circle(4.44);
+console.log(q.getArea(4.44));
+console.log(q.getPerimeter(4.44));
