@@ -10,4 +10,4 @@ This repo represents my introduction to programming in JavaScript and the MERN s
 
 <a href="https://github.com/TaylorBurke/Assignments/tree/master/Taylor/refactorQeoQuest">GeoQuery2.0: </a>refactor of the original, polished the feel to add a material design language.
 
-[Air Quality App:](https://github.com/TaylorBurke/Assignments/tree/master/Taylor/air-quality-app) front end web application using geoCoding and breezoMeter APIs to return air quality data about a user inputted location. 
+[Air Quality App:](https://github.com/TaylorBurke/Assignments/tree/master/Taylor/air-quality-app) front end web application using geoCoding and breezoMeter APIs to return air quality data about a user inputted location. *This app is deployed but doesn't work due to a lack of credits with BreezoMeter
