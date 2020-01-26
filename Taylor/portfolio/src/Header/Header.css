@@ -1,8 +1,8 @@
 .App-header {
     min-height: auto;
     max-height: auto;
-    background-image: url("../pics/h-alt.jpeg");
-    filter: grayscale(90);
+    background-image: url("../pics/milky.jpeg");
+    /* filter: grayscale(90); */
     /* filter: brightness(40%); */
     background-size: cover;
     background-repeat: no-repeat;

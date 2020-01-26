@@ -12,8 +12,7 @@ const Header = (props) => {
             <div className="App-title">
 
 
-                <h1>Hi! I'm Taylor Burke.
-            I make sublime websites.</h1>
+                <h1>Magpie Creative</h1>
 
             </div>
 
