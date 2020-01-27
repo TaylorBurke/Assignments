@@ -1,6 +1,6 @@
 .App-header {
-    min-height: auto;
-    max-height: auto;
+    /* min-height: auto; */
+    /* max-height: auto; */
     background-image: url("../pics/milky.jpeg");
     /* filter: grayscale(90); */
     /* filter: brightness(40%); */

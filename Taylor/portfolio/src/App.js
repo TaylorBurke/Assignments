@@ -34,7 +34,6 @@ class App extends Component {
           scrollToContact={(e)=> this.scrollToElement(this.contactRef)}
           scrollToProject={(e)=> this.scrollToElement(this.projectRef)}/>
           <Intro />
-          <Badges />
           <Projects setProjectRef = {this.setProjectRef}/>
           <Footer setContactRef = {this.setContactRef}/>
       </div>

@@ -15,12 +15,12 @@
     min-height: auto;
     max-height: auto;
     z-index: 0;
-    color: black;
+    color: white;
     flex: 1;
     font-size: 2rem;
     text-align: center;
     flex: 1;
-    background-image: url("../pics/white.jpeg");
+    background-color: black;
     filter: grayscale(90);
     background-size: cover;
     background-repeat: no-repeat;
