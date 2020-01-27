@@ -11,12 +11,10 @@ class App extends Component {
   constructor(){
     super();
     this.contactRef = null;
+    this.projectRef = null;
 
     this.setContactRef = el => this.contactRef = el;
-
     this.setProjectRef = el => this.projectRef = el;
-
-    this.projectRef = null;
 
     this.scrollToElement = this.scrollToElement.bind(this);
   }
