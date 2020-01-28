@@ -32,16 +32,16 @@ $(document).ready(function () {
 
 const Projects = (props) => {
 
-return(
+    return (
 
-<div ref={props.setProjectRef}className="Projects hideme1">
-    <div className="Projects-header">Our Story</div>
-  <p>
-Balancing your organization’s online needs can be overwhelming. With so many great options available, why do our clients trust us to meet their needs? 
-</p>
-</div>
+        <div ref={props.setProjectRef} className="App-intro hideme1">
+            <div className="Header"><h1>Our Story</h1></div>
+            <div className="Header-paragraph">
+                Balancing your organization’s online needs can be overwhelming. With so many great options available, why do our clients trust us to meet their needs?
+            </div>
+        </div>
 
-)
+    )
 
 }
 
