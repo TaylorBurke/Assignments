@@ -9,23 +9,40 @@ class App extends Component {
     this.state = {
       data: []
     }
+
   }
 
   componentDidMount() {
     Tabletop.init({
       key: 'https://docs.google.com/spreadsheets/d/1Ph74L9MGhIXz-Bt1jBWjA_giuhHdCBLhp2VwDEPFlr8/edit?usp=sharing',
       callback: googleData => {
-        console.log('google sheet data --->', googleData)
+        this.setState({
+          data: googleData
+        })
       },
       simpleSheet: true
     })
   }
 
+
   render() {
+
+    const { data } = this.state;
     return (
-      <div className="App">
-          <h1>React + Google Sheets Demo</h1>
-      </div>
+      
+        <div>
+        {data.map(obj => {
+          return (
+            <div key={obj.title}>
+              <h1>{obj.title}</h1>
+              <p>{obj.paragraph}</p>
+              <img alt={obj.title} src={obj.image} />
+            </div>
+          )
+        })
+        }</div>
+      
+
     );
   }
 }
