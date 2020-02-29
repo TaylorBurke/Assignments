@@ -26,7 +26,7 @@ const getNumericReduction = (num) => {
 // iterations that are higher than 45 will tend towards rounding errors 
 // (when the direction is reverse this happens around 20 iterations)
 
-const doVortex = (startingNum, iterations, direction) => {
+const doVortex = (startingNum, iterations, direction = "f") => {
     let functionInput;
     direction === "f" ? functionInput = getDouble : functionInput = getHalf
     let nextNum = startingNum;
@@ -41,4 +41,4 @@ const doVortex = (startingNum, iterations, direction) => {
 
 }
 
-doVortex(8, 25, "r")
+doVortex(8, 25)
