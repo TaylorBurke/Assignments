@@ -57,17 +57,21 @@ const solve = (grid, wordList) => {
 
 		for (let row = 0; row < gridArrays.length; row++){
 			for (let ri = 0; ri < gridArrays[row].length; ri++){
+
 				if (wordAsArray[0] === gridArrays[row][ri]){
-					// start to check to see if the rest of the word is present
-					for (let wi = 1; wi < wordAsArray.length; wi++){
+					// check to see if the rest of the word is present going down
+					for (let wi = 1; wi < wordAsArray.length; wi++) {
 						// check if down within bounds
-						if (gridArrays[row+wi] && gridArrays[row+wi][ri]){
+						if (gridArrays[row+wi] && gridArrays[row+wi][ri]) {
 							if (wordAsArray[wi] !== gridArrays[row+wi][ri]) {
 								break;
-							} else if (wordAsArray.length === wi+1) {
+							} else if (wordAsArray.length === wi + 1) {
 								return true;
 							}
 						}
+					}
+					// check to see if the rest of the word is present going up
+					for (let wi = 1; wi < wordAsArray.length; wi++) {
 						// check if up within bounds
 						if (gridArrays[row-wi] && gridArrays[row-wi][ri]){
 							if (wordAsArray[wi] !== gridArrays[row-wi][ri]) {
@@ -90,29 +94,46 @@ const solve = (grid, wordList) => {
 
 		for (let row = 0; row < gridArrays.length; row++){
 			for (let ri = 0; ri < gridArrays[row].length; ri++){
+
 				if (wordAsArray[0] === gridArrays[row][ri]){
-					// start to check to see if the rest of the word is present
-					for (let wi = 1; wi < wordAsArray.length; wi++){
-						// check if down within bounds
-						if (gridArrays[row+wi] && gridArrays[row+wi][ri+wi]){
+					// check to see if the rest of the word is present going up/right
+					for (let wi = 1; wi < wordAsArray.length; wi++) {
+						// check if up/left within bounds
+						if (gridArrays[row-wi] && gridArrays[row-wi][ri+wi]){
+							if (wordAsArray[wi] !== gridArrays[row-wi][ri+wi]) {
+								break;
+							} else if (wordAsArray.length === wi+1) {
+								return true;
+							}
+						}
+					}
+					// check to see if the rest of the word is present going down/left
+					for (let wi = 1; wi < wordAsArray.length; wi++) {
+						// check if down/left within bounds
+						if (gridArrays[row+wi] && gridArrays[row+wi][ri-wi]) {
+							if (wordAsArray[wi] !== gridArrays[row+wi][ri-wi]) {
+								break;
+							} else if (wordAsArray.length === wi + 1) {
+								return true;
+							}
+						}
+					}
+					// check to see if the rest of the word is present going down/right
+					for (let wi = 1; wi < wordAsArray.length; wi++) {
+						// check if down/right within bounds
+						if (gridArrays[row+wi] && gridArrays[row+wi][ri+wi]) {
 							if (wordAsArray[wi] !== gridArrays[row+wi][ri+wi]) {
 								break;
-							} else if (wordAsArray.length === wi+1) {
+							} else if (wordAsArray.length === wi + 1) {
 								return true;
 							}
 						}
-
+					}
+					// check to see if the rest of the word is present going up/left
+					for (let wi = 1; wi < wordAsArray.length; wi++) {
+						// check if up/left within bounds
 						if (gridArrays[row-wi] && gridArrays[row-wi][ri-wi]){
 							if (wordAsArray[wi] !== gridArrays[row-wi][ri-wi]) {
-								break;
-							} else if (wordAsArray.length === wi+1) {
-								return true;
-							}
-						}
-
-						// check if up within bounds
-						if (gridArrays[row-wi] && gridArrays[row-wi][ri]){
-							if (wordAsArray[wi] !== gridArrays[row-wi][ri]) {
 								break;
 							} else if (wordAsArray.length === wi+1) {
 								return true;
