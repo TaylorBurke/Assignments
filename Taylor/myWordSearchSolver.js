@@ -20,17 +20,21 @@ const solve = (grid, wordList) => {
 
 		for (let row = 0; row < gridArrays.length; row++){
 			for (let ri = 0; ri < gridArrays[row].length; ri++){
+
 				if (wordAsArray[0] === gridArrays[row][ri]){
-					// start to check to see if the rest of the word is present
-					for (let wi = 1; wi < wordAsArray.length; wi++){
+					// check to see if the rest of the word is present going right
+					for (let wi = 1; wi < wordAsArray.length; wi++) {
 						// check if right within bounds
-						if (gridArrays[row][ri+wi]){
-							if (wordAsArray[wi] !== gridArrays[row][ri+wi]) {
+						if (gridArrays[row][ri + wi]) {
+							if (wordAsArray[wi] !== gridArrays[row][ri + wi]) {
 								break;
-							} else if (wordAsArray.length === wi+1) {
+							} else if (wordAsArray.length === wi + 1) {
 								return true;
 							}
 						}
+					}
+					// check to see if the rest of the word is present going left
+					for (let wi = 1; wi < wordAsArray.length; wi++) {
 						// check if left within bounds
 						if (gridArrays[row][ri-wi]){
 							if (wordAsArray[wi] !== gridArrays[row][ri-wi]) {
@@ -137,8 +141,8 @@ const solve = (grid, wordList) => {
 		return output;
 	}
 
-	console.log(getNestedArraysFromGrid(grid))
-	console.log(getArrayFromWordList(wordList))
+	// console.log(getNestedArraysFromGrid(grid))
+	// console.log(getArrayFromWordList(wordList))
 	return getFoundWords(getArrayFromWordList(wordList));
 }
 
