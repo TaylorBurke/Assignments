@@ -19,21 +19,21 @@ const solve = (grid, wordList) => {
 		let wordAsArray = word.split('');
 
 		for (let row = 0; row < gridArrays.length; row++){
-			for (let i = 0; i < gridArrays[row].length; i++){
-				if (wordAsArray[0] === gridArrays[row][i]){
+			for (let ri = 0; ri < gridArrays[row].length; ri++){
+				if (wordAsArray[0] === gridArrays[row][ri]){
 					// start to check to see if the rest of the word is present
 					for (let wi = 1; wi < wordAsArray.length; wi++){
 						// check if right within bounds
-						if (gridArrays[row][i+wi]){
-							if (wordAsArray[wi] !== gridArrays[row][i+wi]) {
+						if (gridArrays[row][ri+wi]){
+							if (wordAsArray[wi] !== gridArrays[row][ri+wi]) {
 								break;
 							} else if (wordAsArray.length === wi+1) {
 								return true;
 							}
 						}
 						// check if left within bounds
-						if (gridArrays[row][i-wi]){
-							if (wordAsArray[wi] !== gridArrays[row][i-wi]) {
+						if (gridArrays[row][ri-wi]){
+							if (wordAsArray[wi] !== gridArrays[row][ri-wi]) {
 								break;
 							} else if (wordAsArray.length === wi+1) {
 								return true;
@@ -49,12 +49,30 @@ const solve = (grid, wordList) => {
 	// vertical
 	// check to see if any of the same indexes in a each of the arrs make the word (forward or reversed)
 	let isFoundV = (word, gridArrays) => {
-		let wordArr = word.split('');
-		for (let row = 0; row < gridArrays.length; row++){
-			for (let i = 0; i < i.length; i++){
-				if (wordArr[0] === row[i]){
-					// start to check to see if the rest of the word is present
+		let wordAsArray = word.split('');
 
+		for (let row = 0; row < gridArrays.length; row++){
+			for (let ri = 0; ri < gridArrays[row].length; ri++){
+				if (wordAsArray[0] === gridArrays[row][ri]){
+					// start to check to see if the rest of the word is present
+					for (let wi = 1; wi < wordAsArray.length; wi++){
+						// check if down within bounds
+						if (gridArrays[row+wi] && gridArrays[row+wi][ri]){
+							if (wordAsArray[wi] !== gridArrays[row+wi][ri]) {
+								break;
+							} else if (wordAsArray.length === wi+1) {
+								return true;
+							}
+						}
+						// check if up within bounds
+						if (gridArrays[row-wi] && gridArrays[row-wi][ri]){
+							if (wordAsArray[wi] !== gridArrays[row-wi][ri]) {
+								break;
+							} else if (wordAsArray.length === wi+1) {
+								return true;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -64,12 +82,39 @@ const solve = (grid, wordList) => {
 	// diagonal
 	// check to see if any of the consecutive indexes in each of the arrs make the word (forward or reversed)
 	let isFoundD = (word, gridArrays) => {
-		let wordArr = word.split('');
-		for (let row = 0; row < gridArrays.length; row++){
-			for (let i = 0; i < i.length; i++){
-				if (wordArr[0] === row[i]){
-					// start to check to see if the rest of the word is present
+		let wordAsArray = word.split('');
 
+		for (let row = 0; row < gridArrays.length; row++){
+			for (let ri = 0; ri < gridArrays[row].length; ri++){
+				if (wordAsArray[0] === gridArrays[row][ri]){
+					// start to check to see if the rest of the word is present
+					for (let wi = 1; wi < wordAsArray.length; wi++){
+						// check if down within bounds
+						if (gridArrays[row+wi] && gridArrays[row+wi][ri+wi]){
+							if (wordAsArray[wi] !== gridArrays[row+wi][ri+wi]) {
+								break;
+							} else if (wordAsArray.length === wi+1) {
+								return true;
+							}
+						}
+
+						if (gridArrays[row-wi] && gridArrays[row-wi][ri-wi]){
+							if (wordAsArray[wi] !== gridArrays[row-wi][ri-wi]) {
+								break;
+							} else if (wordAsArray.length === wi+1) {
+								return true;
+							}
+						}
+
+						// check if up within bounds
+						if (gridArrays[row-wi] && gridArrays[row-wi][ri]){
+							if (wordAsArray[wi] !== gridArrays[row-wi][ri]) {
+								break;
+							} else if (wordAsArray.length === wi+1) {
+								return true;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -93,6 +138,7 @@ const solve = (grid, wordList) => {
 	}
 
 	console.log(getNestedArraysFromGrid(grid))
+	console.log(getArrayFromWordList(wordList))
 	return getFoundWords(getArrayFromWordList(wordList));
 }
 
