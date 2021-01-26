@@ -1,141 +1,100 @@
 const solve = (rawGrid, rawWordList) => {
 
-	let getArraysFromRawGrid = gridStr => {
-		let nestedArr = [];
-		let stringArray = gridStr.split('\n');
+	const getGrid = rawGrid => {
+		let gridArray = [];
+		let stringArray = rawGrid.split('\n');
 		for (let i = 0; i < stringArray.length; i++) {
 			let nextLevel = stringArray[i].split('')
-			nestedArr.push(nextLevel);
+			gridArray.push(nextLevel);
 		}
-		return nestedArr;
+		return gridArray;
 	}
 
-	let getWordList = wordListStr => wordListStr.split('\n');
+	const getWordList = rawList => rawList.split('\n');
 
-	let grid = getArraysFromRawGrid(rawGrid);
+	let grid = getGrid(rawGrid);
 
+	let wordList = getWordList(rawWordList);
 
-	let isWordComplete = ( word, row, column, direction) => {
-		let output;
+	const findByDirection = ( word, rowIndex, columnIndex, direction) => {
 		let rowOperand;
 		let columnOperand;
 
-		for (let wi = 1; wi < word.length; wi++) {
+		// 0 already verified, start at 1
+		for (let indexOfWord = 1; indexOfWord < word.length; indexOfWord++) {
+			// set direction and distance
 			switch (direction) {
 				case 'upLeft':
-					rowOperand = (row - wi);
-					columnOperand = (column - wi);
+					rowOperand = (rowIndex - indexOfWord);
+					columnOperand = (columnIndex - indexOfWord);
 					break;
 				case 'upRight':
-					rowOperand = (row - wi);
-					columnOperand = (column + wi);
+					rowOperand = (rowIndex - indexOfWord);
+					columnOperand = (columnIndex + indexOfWord);
 					break;
 				case 'up':
-					rowOperand = (row - wi);
-					columnOperand = (column);
+					rowOperand = (rowIndex - indexOfWord);
+					columnOperand = (columnIndex);
 					break;
 				case 'downLeft'	:
-					rowOperand = (row + wi);
-					columnOperand = (column - wi);
+					rowOperand = (rowIndex + indexOfWord);
+					columnOperand = (columnIndex - indexOfWord);
 					break;
 				case 'downRight' :
-					rowOperand = (row + wi);
-					columnOperand = (column + wi);
+					rowOperand = (rowIndex + indexOfWord);
+					columnOperand = (columnIndex + indexOfWord);
 					break;
 				case 'down'	:
-					rowOperand = (row + wi);
-					columnOperand = (column);
+					rowOperand = (rowIndex + indexOfWord);
+					columnOperand = (columnIndex);
 					break;
 				case 'left'	:
-					rowOperand = (row);
-					columnOperand = (column - wi);
+					rowOperand = (rowIndex);
+					columnOperand = (columnIndex - indexOfWord);
 					break;
 				case 'right':
-					rowOperand = (row);
-					columnOperand = (column + wi);
+					rowOperand = (rowIndex);
+					columnOperand = (columnIndex + indexOfWord);
 					break;
 			}
 
 			// check if next letter in grid is within bounds
 			if (grid[rowOperand] && grid[rowOperand][columnOperand]) {
 				// if not equal to the next letter in the word, break loop
-				if (word[wi] !== grid[rowOperand][columnOperand]) {
+				if (word[indexOfWord] !== grid[rowOperand][columnOperand]) {
 					break;
-					// if matches reach word length we found the word
-				} else if (word.length === wi + 1) {
-					output = true;
+					// if it passes above and is appropriate length we found the word
+				} if (word.length === indexOfWord + 1) {
+					return true;
 				}
 			}
 		}
-
-		return output;
 	}
 
-
-	// horizontal
-	// check to see if any of the indexes in a sub arr make the word (forward or reversed)
-	let isFoundH = (rawWord) => {
+	let isFound = (rawWord) => {
 		let word = rawWord.split('');
 
-		for (let row = 0; row < grid.length; row++) {
-			for (let column = 0; column < grid[row].length; column++) {
+		for (let rowIndex = 0; rowIndex < grid.length; rowIndex++) {
+			for (let columnIndex = 0; columnIndex < grid[rowIndex].length; columnIndex++) {
 
-				if (word[0] === grid[row][column]) {
-					if (isWordComplete(word, row, column, "left")){return true}
-					if (isWordComplete(word, row, column, "right")){return true}
+				if (word[0] === grid[rowIndex][columnIndex]) {
+					// if first letter match, verify each direction
+					if (findByDirection(word, rowIndex, columnIndex, "left") 
+						|| findByDirection(word, rowIndex, columnIndex, "right") 
+						|| findByDirection(word, rowIndex, columnIndex, "up") 
+						|| findByDirection(word, rowIndex, columnIndex, "down") 
+						|| findByDirection(word, rowIndex, columnIndex, "upRight") 
+						|| findByDirection(word, rowIndex, columnIndex, "upLeft") 
+						|| findByDirection(word, rowIndex, columnIndex, "downRight") 
+						|| findByDirection(word, rowIndex, columnIndex, "downLeft")) return true;
 				}
 			}
 		}
-		return false;
 	}
 
-	// vertical
-	// check to see if any of the same indexes in a each of the arrs make the word (forward or reversed)
-	let isFoundV = (rawWord) => {
-		let word = rawWord.split('');
+	const getFoundWords = wordList => wordList.filter(w => isFound(w));
 
-		for (let row = 0; row < grid.length; row++) {
-			for (let column = 0; column < grid[row].length; column++) {
-
-				if (word[0] === grid[row][column]) {
-					if (isWordComplete(word, row, column, "up")){return true}
-					if (isWordComplete(word, row, column, "down")){return true}
-				}
-			}
-		}
-		return false;
-	}
-
-	// diagonal
-	// check to see if any of the consecutive indexes in each of the arrs make the word (forward or reversed)
-	let isFoundD = (rawWord) => {
-		let word = rawWord.split('');
-
-		for (let row = 0; row < grid.length; row++) {
-			for (let column = 0; column < grid[row].length; column++) {
-
-				if (word[0] === grid[row][column]) {
-					if (isWordComplete(word, row, column, "upRight")){return true}
-					if (isWordComplete(word, row, column, "upLeft")){return true}
-					if (isWordComplete(word, row, column, "downLeft")){return true}
-					if (isWordComplete(word, row, column, "downRight")){return true}
-				}
-			}
-		}
-		return false;
-	}
-
-	let isWordFound = (word) => {
-		return (isFoundH(word) || isFoundV(word) || isFoundD(word))
-	}
-
-	let getFoundWords = (wordListArray) => {
-		return wordListArray.filter(w => isWordFound(w));
-	}
-
-	return getFoundWords(getWordList(rawWordList));
+	return getFoundWords(wordList);
 }
-
-// @todo detected an edge case with you/you're
 
 exports.solve = solve
